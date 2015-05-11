@@ -26,23 +26,128 @@ Initial Setup
 
 Usage
 -----
+```javascript
+
+/**
+ * Registering the user to push notifications
+ */
+netmeraPlugin.register(function() {
+	alert("Register successfull");
+}, function (e) {
+	// Handle error
+	alert(e);
+});
+
+
+/**
+ * Getting Device Detail
+ */
+netmeraPlugin.getDeviceDetail(function (deviceDetail) {
+	// Getting location
+	console.log(deviceDetail.location.latitude + ", " + deviceDetail.location.longitude);
+	
+	// Getting tags
+	console.log(deviceDetail.tags);
+	
+	// Getting custom fields
+	console.log(deviceDetail.customFields);
+}, function(e) {
+	// Handle error
+	alert(e);
+});
+
+
+/**
+ * Add Tags to the push user
+ */
+netmeraPlugin.addTags(["Sports", "News"], function() {
+	alert("Adding tags successfull");
+}, function (e) {
+	// Handle error
+	alert(e);
+});
+
+
+/**
+ * Override existing tags of the push user
+ * Example: The user will be registered to only Music tag.
+ */
+netmeraPlugin.overrideTags(["Music"], function() {
+	alert("Overriding tags successfull");
+}, function (e) {
+	// Handle error
+	alert(e);
+});
+
+
+
+/**
+ * Update location of the user.
+ */
+netmeraPlugin.updateLocation(41.212413, 29.8719310, function() {
+	alert("Update user location successfull");
+}, function (e) {
+	// Handle error
+	alert(e);
+});
+
+
+/**
+ * Set custom fields of the user
+ */
+var customFields = { 'age': 21, 'gender': 'male', 'city': 'Istanbul' };
+netmeraPlugin.setCustomFields(customFields, function() {
+	alert("Update user's Custom Fields successfull");
+}, function (e) {
+	// Handle error
+	alert(e);
+});
+
+
+/**
+ * Removing specific tags from the user
+ */
+netmeraPlugin.removeTags(["Music"], function() {
+	alert("Remove Tags successfull");
+}, function (e) {
+	// Handle error
+	alert(e);
+});
+
+
+/**
+ * Unregistering the user from push notifications
+ * The user will not get push notifications until you register him/her back.
+ */
+netmeraPlugin.unregister(function() {
+	alert("Unregister successfull");
+}, function (e) {
+	// Handle error
+	alert(e);
+});
 ```
-<script type="text/javascript">
-	netmeraPlugin.getDeviceDetail(function (deviceDetail) {
-		// Getting location
-		console.log(deviceDetail.location.latitude + ", " + deviceDetail.location.longitude);
-		
-		// Getting tags
-		console.log(deviceDetail.tags);
-		
-		// Getting custom fields
-		console.log(deviceDetail.customFields);
-	}, function(e) {
-		// Handle error
-		alert(e);
-	});
-</script>
-```
+
+
+/**
+ * Sending Events
+ */
+netmeraPlugin.sendEvent('AddToCartEvent', function () {
+	alert("Event sent successfully");
+}, function (e) {
+	// Handle error
+	alert(e);
+});
+
+/**
+ * Sending Events with Custom Data
+ */
+var customData = { 'product': 'Basket Ball', 'color': 'Blue' };
+netmeraPlugin.sendEventWithData('AddToCartEvent', customData, function () {
+	alert("Event sent successfully");
+}, function (e) {
+	// Handle error
+	alert(e);
+});
 
 Quirks
 ------

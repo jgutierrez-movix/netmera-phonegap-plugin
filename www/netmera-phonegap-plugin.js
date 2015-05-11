@@ -1,4 +1,14 @@
 var netmeraPlugin = {
+	register: function (successCallback, errorCallback) {
+		cordova.exec(
+			successCallback,
+			errorCallback,
+			'NetmeraPlugin',
+			'register',
+			[]
+		);
+	},
+	
 	addTags: function (tags, successCallback, errorCallback) {
 		cordova.exec(
 			successCallback,
@@ -60,7 +70,7 @@ var netmeraPlugin = {
 		);
 	},
 	
-	setCustomFields: function (successCallback, errorCallback) {
+	unregister: function (successCallback, errorCallback) {
 		cordova.exec(
 			successCallback,
 			errorCallback,

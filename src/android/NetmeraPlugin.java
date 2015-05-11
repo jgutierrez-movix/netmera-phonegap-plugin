@@ -28,6 +28,7 @@ import com.netmera.mobile.NetmeraPushService;
 
 public class NetmeraPlugin extends CordovaPlugin {
 	public static final String TAG = "NetmeraPlugin";
+	public static final String ACTION_REGISTER = "register";
 	public static final String ACTION_SET_TAGS = "setTags";
 	public static final String ACTION_UPDATE_LOCATION = "updateUserLocation";
 	public static final String ACTION_SET_CUSTOM_FIELDS = "setCustomFields";
@@ -61,6 +62,11 @@ public class NetmeraPlugin extends CordovaPlugin {
 
 	@Override
 	public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
+		if (action.equals(ACTION_REGISTER)) {
+			this.register(callbackContext);
+			return true;
+		}
+
 		if (action.equals(ACTION_SET_TAGS)) {
 			this.setTags(convertJSONArrayToStringList(args.getJSONArray(0)), args.getBoolean(1), callbackContext);
 			return true;
@@ -104,6 +110,15 @@ public class NetmeraPlugin extends CordovaPlugin {
 		}
 
 		return false;
+	}
+
+	private void register(final CallbackContext callbackContext) {
+		try {
+			NetmeraPushService.register(app.getApplicationContext(), googleProjectId, pushActivityClass);
+			callbackContext.success();
+		} catch (NetmeraException e) {
+			callbackContext.error(e.getMessage());
+		}
 	}
 
 	private void getDeviceDetail(final CallbackContext callbackContext) {
