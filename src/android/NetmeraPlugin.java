@@ -1,7 +1,10 @@
 package org.apache.cordova.core;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
@@ -15,16 +18,23 @@ import android.util.Log;
 
 import com.netmera.mobile.Logging.LogLevel;
 import com.netmera.mobile.Netmera;
+import com.netmera.mobile.NetmeraCallback;
 import com.netmera.mobile.NetmeraDeviceDetail;
 import com.netmera.mobile.NetmeraEvent;
 import com.netmera.mobile.NetmeraException;
+import com.netmera.mobile.NetmeraGeoLocation;
 import com.netmera.mobile.NetmeraProperties;
 import com.netmera.mobile.NetmeraPushService;
 
 public class NetmeraPlugin extends CordovaPlugin {
 	public static final String TAG = "NetmeraPlugin";
 	public static final String ACTION_SET_TAGS = "setTags";
+	public static final String ACTION_UPDATE_LOCATION = "updateUserLocation";
+	public static final String ACTION_SET_CUSTOM_FIELDS = "setCustomFields";
 	public static final String ACTION_SEND_EVENT = "sendCustomEvent";
+	public static final String ACTION_UNREGISTER = "unregister";
+	public static final String ACTION_REMOVE_TAGS = "removeTags";
+	public static final String ACTION_GET_DEVICE_DETAIL = "getDeviceDetail";
 
 	private static Application app;
 	private static Class<? extends Activity> pushActivityClass;
@@ -64,9 +74,54 @@ public class NetmeraPlugin extends CordovaPlugin {
 				this.sendCustomEvent(args.getString(0), args.getJSONObject(1), callbackContext);
 				return true;
 			}
+
+			return false;
+		}
+
+		if (action.equals(ACTION_UPDATE_LOCATION)) {
+			this.updateUserLocation(args.getDouble(0), args.getDouble(1), callbackContext);
+			return true;
+		}
+
+		if (action.equals(ACTION_SET_CUSTOM_FIELDS)) {
+			this.setCustomFields(args.getJSONObject(0), callbackContext);
+			return true;
+		}
+
+		if (action.equals(ACTION_UNREGISTER)) {
+			this.unregister(null, callbackContext);
+			return true;
+		}
+
+		if (action.equals(ACTION_REMOVE_TAGS)) {
+			this.unregister(convertJSONArrayToStringList(args.getJSONArray(0)), callbackContext);
+			return true;
+		}
+
+		if (action.equals(ACTION_GET_DEVICE_DETAIL)) {
+			this.getDeviceDetail(callbackContext);
+			return true;
 		}
 
 		return false;
+	}
+
+	private void getDeviceDetail(final CallbackContext callbackContext) {
+		NetmeraPushService.getDeviceDetailInBackground(app.getApplicationContext(), new NetmeraCallback<NetmeraDeviceDetail>() {
+			@Override
+			public void onSuccess(NetmeraDeviceDetail deviceDetail) {
+				try {
+					callbackContext.success(convertDeviceDetailToJSONObject(deviceDetail));
+				} catch (JSONException e) {
+					callbackContext.error(e.getMessage());
+				}
+			}
+
+			@Override
+			public void onFail(NetmeraException e) {
+				callbackContext.error(e.getMessage());
+			}
+		});
 	}
 
 	private void setTags(final List<String> tags, final boolean overrideTags, final CallbackContext callbackContext) {
@@ -79,6 +134,47 @@ public class NetmeraPlugin extends CordovaPlugin {
 		} catch (NetmeraException e) {
 			callbackContext.error(e.getMessage());
 		}
+	}
+
+	private void updateUserLocation(Double latitude, Double longitude, final CallbackContext callbackContext) {
+		NetmeraDeviceDetail deviceDetail = new NetmeraDeviceDetail(app.getApplicationContext(), googleProjectId, pushActivityClass);
+		try {
+			deviceDetail.setDeviceLocation(new NetmeraGeoLocation(latitude, longitude));
+			NetmeraPushService.register(deviceDetail);
+			callbackContext.success();
+		} catch (NetmeraException e) {
+			callbackContext.error(e.getMessage());
+		}
+	}
+
+	private void setCustomFields(JSONObject customFieldsObj, final CallbackContext callbackContext) throws JSONException {
+		NetmeraDeviceDetail deviceDetail = new NetmeraDeviceDetail(app.getApplicationContext(), googleProjectId, pushActivityClass);
+		try {
+			Map<String, Object> customFields = new HashMap<String, Object>();
+
+			Iterator<String> keys = customFieldsObj.keys();
+			while (keys.hasNext()) {
+				String key = keys.next();
+				customFields.put(key, customFieldsObj.get(key));
+			}
+
+			deviceDetail.setCustomFields(customFields);
+			NetmeraPushService.register(deviceDetail);
+			callbackContext.success();
+		} catch (NetmeraException e) {
+			callbackContext.error(e.getMessage());
+		}
+	}
+
+	private void unregister(List<String> tags, final CallbackContext callbackContext) {
+		if (tags == null) {
+			NetmeraPushService.unregister(app.getApplicationContext());
+		} else {
+			NetmeraDeviceDetail deviceDetail = new NetmeraDeviceDetail(app.getApplicationContext(), googleProjectId, pushActivityClass);
+			deviceDetail.setTags(tags);
+			NetmeraPushService.unregister(deviceDetail);
+		}
+		callbackContext.success();
 	}
 
 	private void sendCustomEvent(final String eventName, final JSONObject eventData, final CallbackContext callbackContext) {
@@ -101,5 +197,30 @@ public class NetmeraPlugin extends CordovaPlugin {
 			list.add(jsonArray.getString(i));
 		}
 		return list;
+	}
+
+	private JSONObject convertDeviceDetailToJSONObject(NetmeraDeviceDetail deviceDetail) throws JSONException {
+		JSONObject json = new JSONObject();
+		NetmeraGeoLocation deviceLocation = deviceDetail.getDeviceLocation();
+		if (deviceLocation != null) {
+			JSONObject locationObj = new JSONObject();
+			locationObj.put("latitude", deviceLocation.getLatitude());
+			locationObj.put("longitude", deviceLocation.getLongitude());
+			json.put("location", locationObj);
+		}
+
+		Map<String, Object> customFields = deviceDetail.getCustomFields();
+		if (customFields != null) {
+			JSONObject customFieldsObj = new JSONObject(customFields);
+			json.put("customFields", customFieldsObj);
+		}
+
+		List<String> tags = deviceDetail.getTags();
+		if (tags != null) {
+			JSONArray tagsArr = new JSONArray(tags);
+			json.put("tags", tagsArr);
+		}
+
+		return json;
 	}
 }
