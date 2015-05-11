@@ -125,7 +125,6 @@ netmeraPlugin.unregister(function() {
 	// Handle error
 	alert(e);
 });
-```
 
 
 /**
@@ -148,6 +147,8 @@ netmeraPlugin.sendEventWithData('AddToCartEvent', customData, function () {
 	// Handle error
 	alert(e);
 });
+
+```
 
 Quirks
 ------
