@@ -66,7 +66,7 @@ public class NetmeraPlugin extends CordovaPlugin {
         return false;
     }
 	
-	private void register(JSONArray args, CallbackContext callbackContext) {
+	private void register(final JSONArray args, final CallbackContext callbackContext) {
 		cordova.getThreadPool().execute(new Runnable() {
             public void run() {
 				NetmeraDeviceDetail deviceDetail = new NetmeraDeviceDetail(app.getApplicationContext(), googleProjectId, pushActivityClass);
