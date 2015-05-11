@@ -1,0 +1,8775 @@
+<api>
+<package name="com.netmera.mobile"
+>
+<class name="AppInfo"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="AppInfo"
+ type="com.netmera.mobile.AppInfo"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="getAppInfoInJsonFormat"
+ return="org.json.JSONObject"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getAppName"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getAppVersion"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getClientIp"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getConnType"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getDeviceName"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getDid"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getIid"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getLocale"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getLocation"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getOperator"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getOrientation"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getOsVersion"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getPackageName"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getResolution"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getTimeZone"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="setAppName"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="appName" type="java.lang.String">
+</parameter>
+</method>
+<method name="setAppVersion"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="appVersion" type="java.lang.String">
+</parameter>
+</method>
+<method name="setClientIp"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="clientIp" type="java.lang.String">
+</parameter>
+</method>
+<method name="setConnType"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="connType" type="java.lang.String">
+</parameter>
+</method>
+<method name="setDeviceName"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="deviceName" type="java.lang.String">
+</parameter>
+</method>
+<method name="setDid"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="did" type="java.lang.String">
+</parameter>
+</method>
+<method name="setIid"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="iid" type="java.lang.String">
+</parameter>
+</method>
+<method name="setLocale"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="locale" type="java.lang.String">
+</parameter>
+</method>
+<method name="setLocation"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="location" type="java.lang.String">
+</parameter>
+</method>
+<method name="setOperator"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="operator" type="java.lang.String">
+</parameter>
+</method>
+<method name="setOrientation"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="orientation" type="java.lang.String">
+</parameter>
+</method>
+<method name="setOsVersion"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="osVersion" type="java.lang.String">
+</parameter>
+</method>
+<method name="setPackageName"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="packageName" type="java.lang.String">
+</parameter>
+</method>
+<method name="setResolution"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="resolution" type="java.lang.String">
+</parameter>
+</method>
+<method name="setTimeZone"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="timeZone" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class name="AppUtils"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="AppUtils"
+ type="com.netmera.mobile.AppUtils"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="checkAppHasPermission"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="permission" type="java.lang.String">
+</parameter>
+</method>
+<method name="isAppOpen"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isOnline"
+ return="java.lang.Boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method name="isTablet"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+</class>
+<class name="GeofenceService"
+ extends="android.app.Service"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="deprecated"
+ visibility="public"
+>
+<constructor name="GeofenceService"
+ type="com.netmera.mobile.GeofenceService"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="getContext"
+ return="android.content.Context"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="onBind"
+ return="android.os.IBinder"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="intent" type="android.content.Intent">
+</parameter>
+</method>
+<method name="onConnected"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="bundle" type="android.os.Bundle">
+</parameter>
+</method>
+<method name="onConnectionFailed"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="connectionResult" type="ConnectionResult">
+</parameter>
+</method>
+<method name="onConnectionSuspended"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="i" type="int">
+</parameter>
+</method>
+<method name="onLocationChanged"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="location" type="android.location.Location">
+</parameter>
+</method>
+<method name="setContext"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method name="setGeofenceSettings"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="geofence" type="com.netmera.mobile.NetmeraGeofence">
+</parameter>
+</method>
+<method name="startLocationService"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="stopLocationService"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="LocationService"
+ extends="android.app.Service"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="LocationService"
+ type="com.netmera.mobile.LocationService"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="getContext"
+ return="android.content.Context"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="onBind"
+ return="android.os.IBinder"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="intent" type="android.content.Intent">
+</parameter>
+</method>
+<method name="onConnected"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="bundle" type="android.os.Bundle">
+</parameter>
+</method>
+<method name="onConnectionFailed"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="connectionResult" type="ConnectionResult">
+</parameter>
+</method>
+<method name="onConnectionSuspended"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="i" type="int">
+</parameter>
+</method>
+<method name="onLocationChanged"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="location" type="android.location.Location">
+</parameter>
+</method>
+<method name="setContext"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method name="setLocationSettings"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="locationSettings" type="com.netmera.mobile.NetmeraLocationSettings">
+</parameter>
+</method>
+<method name="startLocationService"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="startLocationService"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="extra" type="java.lang.String">
+</parameter>
+</method>
+<method name="stopLocationService"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="Logging"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="debug"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="tag" type="java.lang.String">
+</parameter>
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="tr" type="java.lang.Throwable">
+</parameter>
+</method>
+<method name="debug"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="tag" type="java.lang.String">
+</parameter>
+<parameter name="message" type="java.lang.String">
+</parameter>
+</method>
+<method name="error"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="tag" type="java.lang.String">
+</parameter>
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="tr" type="java.lang.Throwable">
+</parameter>
+</method>
+<method name="error"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="tag" type="java.lang.String">
+</parameter>
+<parameter name="message" type="java.lang.String">
+</parameter>
+</method>
+<method name="getLogLevel"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="info"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="tag" type="java.lang.String">
+</parameter>
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="tr" type="java.lang.Throwable">
+</parameter>
+</method>
+<method name="info"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="tag" type="java.lang.String">
+</parameter>
+<parameter name="message" type="java.lang.String">
+</parameter>
+</method>
+<method name="setLogLevel"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="logLevel" type="int">
+</parameter>
+</method>
+<method name="setLogLevel"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="logLevel" type="com.netmera.mobile.Logging.LogLevel">
+</parameter>
+</method>
+<method name="verbose"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="tag" type="java.lang.String">
+</parameter>
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="tr" type="java.lang.Throwable">
+</parameter>
+</method>
+<method name="verbose"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="tag" type="java.lang.String">
+</parameter>
+<parameter name="message" type="java.lang.String">
+</parameter>
+</method>
+<method name="warn"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="tag" type="java.lang.String">
+</parameter>
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="tr" type="java.lang.Throwable">
+</parameter>
+</method>
+<method name="warn"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="tag" type="java.lang.String">
+</parameter>
+<parameter name="message" type="java.lang.String">
+</parameter>
+</method>
+<field name="DEBUG"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="3"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ERROR"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="6"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="INFO"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="4"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NONE"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="2147483647"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="VERBOSE"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="2"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="WARNING"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="5"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="Logging.LogLevel"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="getLevel"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
+<method name="valueOf"
+ return="com.netmera.mobile.Logging.LogLevel"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="com.netmera.mobile.Logging.LogLevel[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="Netmera"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="getAppInfo"
+ return="com.netmera.mobile.AppInfo"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getContext"
+ return="android.content.Context"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getInstallationID"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getSecurityToken"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method name="init"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="apiKey" type="java.lang.String">
+</parameter>
+</method>
+<method name="init"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="application" type="android.app.Application">
+</parameter>
+<parameter name="callback" type="com.netmera.mobile.NetmeraCallback&lt;java.lang.Void&gt;">
+</parameter>
+</method>
+<method name="init"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="application" type="android.app.Application">
+</parameter>
+<parameter name="properties" type="com.netmera.mobile.NetmeraProperties">
+</parameter>
+</method>
+<method name="init"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="application" type="android.app.Application">
+</parameter>
+<parameter name="properties" type="com.netmera.mobile.NetmeraProperties">
+</parameter>
+<parameter name="callback" type="com.netmera.mobile.NetmeraCallback&lt;java.lang.Void&gt;">
+</parameter>
+</method>
+<method name="init"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="application" type="android.app.Application">
+</parameter>
+</method>
+<method name="setContext"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<field name="appInfo"
+ type="com.netmera.mobile.AppInfo"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</field>
+</class>
+<class name="NetmeraActivity"
+ extends="android.app.Activity"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="NetmeraActivity"
+ type="com.netmera.mobile.NetmeraActivity"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+</class>
+<class name="NetmeraBroadcastReceiver"
+ extends="android.content.BroadcastReceiver"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="NetmeraBroadcastReceiver"
+ type="com.netmera.mobile.NetmeraBroadcastReceiver"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="onNotificationActionClick"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="intent" type="android.content.Intent">
+</parameter>
+</method>
+<method name="onReceive"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="intent" type="android.content.Intent">
+</parameter>
+</method>
+</class>
+<class name="NetmeraCache"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</class>
+<class name="NetmeraCache.CacheType"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="valueOf"
+ return="com.netmera.mobile.NetmeraCache.CacheType"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="com.netmera.mobile.NetmeraCache.CacheType[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="NetmeraCache.SortOrder"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="valueOf"
+ return="com.netmera.mobile.NetmeraCache.SortOrder"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="com.netmera.mobile.NetmeraCache.SortOrder[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="NetmeraCallback"
+ extends="java.lang.Object"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="NetmeraCallback"
+ type="com.netmera.mobile.NetmeraCallback"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="onFail"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="exception" type="com.netmera.mobile.NetmeraException">
+</parameter>
+</method>
+<method name="onSuccess"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="result" type="T">
+</parameter>
+</method>
+</class>
+<class name="NetmeraConnectionUtils"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="NetmeraConnectionUtils"
+ type="com.netmera.mobile.NetmeraConnectionUtils"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="setConnectionTimeout"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="milliSeconds" type="long">
+</parameter>
+</method>
+<method name="setReadTimeout"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="milliSeconds" type="int">
+</parameter>
+</method>
+</class>
+<class name="NetmeraDeviceDetail"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="NetmeraDeviceDetail"
+ type="com.netmera.mobile.NetmeraDeviceDetail"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</constructor>
+<constructor name="NetmeraDeviceDetail"
+ type="com.netmera.mobile.NetmeraDeviceDetail"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="senderId" type="java.lang.String">
+</parameter>
+<parameter name="netmeraPushActivityClass" type="java.lang.Class&lt;? extends android.app.Activity&gt;">
+</parameter>
+</constructor>
+<method name="addCustomField"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.Object">
+</parameter>
+</method>
+<method name="addTag"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="tag" type="java.lang.String">
+</parameter>
+</method>
+<method name="getContext"
+ return="android.content.Context"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getCustomFields"
+ return="java.util.Map&lt;java.lang.String, java.lang.Object&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getDeviceGroups"
+ return="java.util.List&lt;java.lang.String&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="deprecated"
+ visibility="public"
+>
+</method>
+<method name="getDeviceLocation"
+ return="com.netmera.mobile.NetmeraGeoLocation"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getPushActivityClass"
+ return="java.lang.Class&lt;? extends android.app.Activity&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getSenderId"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getTags"
+ return="java.util.List&lt;java.lang.String&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isOverrideTags"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="setContext"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method name="setCustomFields"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="customFields" type="java.util.Map&lt;java.lang.String, java.lang.Object&gt;">
+</parameter>
+</method>
+<method name="setDeviceGroup"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="deprecated"
+ visibility="public"
+>
+<parameter name="deviceGroup" type="java.lang.String">
+</parameter>
+</method>
+<method name="setDeviceGroups"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="deprecated"
+ visibility="public"
+>
+<parameter name="deviceGroups" type="java.util.List&lt;java.lang.String&gt;">
+</parameter>
+</method>
+<method name="setDeviceLocation"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="geoLocation" type="com.netmera.mobile.NetmeraGeoLocation">
+</parameter>
+</method>
+<method name="setOverrideTags"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="overrideTags" type="boolean">
+</parameter>
+</method>
+<method name="setPushActivityClass"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pushActivityClass" type="java.lang.Class&lt;? extends android.app.Activity&gt;">
+</parameter>
+</method>
+<method name="setSenderId"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="senderId" type="java.lang.String">
+</parameter>
+</method>
+<method name="setTags"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="tags" type="java.util.List&lt;java.lang.String&gt;">
+</parameter>
+</method>
+</class>
+<class name="NetmeraEvent"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="clearUnSendedEvents"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="deprecated"
+ visibility="public"
+>
+</method>
+<method name="getAppOpenTime"
+ return="long"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
+<method name="onStart"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="activity" type="android.app.Activity">
+</parameter>
+</method>
+<method name="onStop"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="activity" type="android.app.Activity">
+</parameter>
+</method>
+<method name="removeOfflineEvents"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="sendAppClosedEventInternal"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="appOpenTime" type="long">
+</parameter>
+<parameter name="appCloseTime" type="long">
+</parameter>
+<parameter name="timeInActivityMap" type="java.util.Map&lt;java.lang.String, com.netmera.mobile.AppLifeCycleTracker.ActivityStats&gt;">
+</parameter>
+</method>
+<method name="sendAppOpenedEvent"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="comingFromPush" type="boolean">
+</parameter>
+<parameter name="intent" type="android.content.Intent">
+</parameter>
+</method>
+<method name="sendCustomEvent"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="key" type="java.lang.String">
+</parameter>
+<exception name="NetmeraException" type="com.netmera.mobile.NetmeraException">
+</exception>
+</method>
+<method name="sendCustomEventWithData"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="data" type="org.json.JSONObject">
+</parameter>
+<exception name="NetmeraException" type="com.netmera.mobile.NetmeraException">
+</exception>
+</method>
+<method name="sendEvent"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="org.json.JSONObject">
+</parameter>
+<exception name="NetmeraException" type="com.netmera.mobile.NetmeraException">
+</exception>
+</method>
+<method name="sendPushClickedEvent"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="deprecated"
+ visibility="public"
+>
+<parameter name="intent" type="android.content.Intent">
+</parameter>
+</method>
+<method name="sendPushClickedEventInternal"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="intent" type="android.content.Intent">
+</parameter>
+</method>
+<method name="sendTestGroupEvent"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="activity" type="android.app.Activity">
+</parameter>
+</method>
+</class>
+<class name="NetmeraException"
+ extends="java.lang.Exception"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="NetmeraException"
+ type="com.netmera.mobile.NetmeraException"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="code" type="com.netmera.mobile.NetmeraException.ErrorCode">
+</parameter>
+<parameter name="message" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor name="NetmeraException"
+ type="com.netmera.mobile.NetmeraException"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+<constructor name="NetmeraException"
+ type="com.netmera.mobile.NetmeraException"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+<method name="getCode"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="NetmeraException.ErrorCode"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="getValue"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="valueOf"
+ return="com.netmera.mobile.NetmeraException.ErrorCode"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="com.netmera.mobile.NetmeraException.ErrorCode[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="NetmeraExceptionReporter"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="sendExceptionReport"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="thread" type="java.lang.Thread">
+</parameter>
+<parameter name="exception" type="java.lang.Throwable">
+</parameter>
+</method>
+</class>
+<class name="NetmeraGeoLocation"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="NetmeraGeoLocation"
+ type="com.netmera.mobile.NetmeraGeoLocation"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<constructor name="NetmeraGeoLocation"
+ type="com.netmera.mobile.NetmeraGeoLocation"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="latitude" type="double">
+</parameter>
+<parameter name="longitude" type="double">
+</parameter>
+<exception name="NetmeraException" type="com.netmera.mobile.NetmeraException">
+</exception>
+</constructor>
+<method name="getLatitude"
+ return="double"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getLongitude"
+ return="double"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="setLatitude"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="latitude" type="double">
+</parameter>
+<exception name="NetmeraException" type="com.netmera.mobile.NetmeraException">
+</exception>
+</method>
+<method name="setLongitude"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="longitude" type="double">
+</parameter>
+<exception name="NetmeraException" type="com.netmera.mobile.NetmeraException">
+</exception>
+</method>
+</class>
+<class name="NetmeraGeofence"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="deprecated"
+ visibility="public"
+>
+<constructor name="NetmeraGeofence"
+ type="com.netmera.mobile.NetmeraGeofence"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="getFastestInterval"
+ return="long"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getIntervalMeters"
+ return="long"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getIntervalSeconds"
+ return="long"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getPriority"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="setFastestInterval"
+ return="com.netmera.mobile.NetmeraGeofence"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="fastestInterval" type="long">
+</parameter>
+</method>
+<method name="setIntervalMeters"
+ return="com.netmera.mobile.NetmeraGeofence"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="intervalMeters" type="long">
+</parameter>
+</method>
+<method name="setIntervalSeconds"
+ return="com.netmera.mobile.NetmeraGeofence"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="intervalSeconds" type="long">
+</parameter>
+</method>
+<method name="setPriority"
+ return="com.netmera.mobile.NetmeraGeofence"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="priority" type="int">
+</parameter>
+</method>
+<field name="PRIORITY_BALANCED_POWER_ACCURACY"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="102"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PRIORITY_HIGH_ACCURACY"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="100"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PRIORITY_LOW_POWER"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="104"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PRIORITY_NO_POWER"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="105"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="NetmeraGeofenceService"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="deprecated"
+ visibility="public"
+>
+<method name="init"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="geofence" type="com.netmera.mobile.NetmeraGeofence">
+</parameter>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<exception name="NetmeraException" type="com.netmera.mobile.NetmeraException">
+</exception>
+</method>
+<method name="startGeofenceService"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="stopGeofenceService"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="NetmeraIntentService"
+ extends="android.app.IntentService"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="NetmeraIntentService"
+ type="com.netmera.mobile.NetmeraIntentService"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="getMessage"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
+<method name="getPushId"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getPushType"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
+<method name="getSip"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
+<method name="onDeletedMessages"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="total" type="int">
+</parameter>
+</method>
+<method name="onError"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="errorId" type="java.lang.String">
+</parameter>
+</method>
+<method name="onHandleIntent"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="intent" type="android.content.Intent">
+</parameter>
+</method>
+<method name="onMessage"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="intent" type="android.content.Intent">
+</parameter>
+</method>
+<method name="onRecoverableError"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="errorId" type="java.lang.String">
+</parameter>
+</method>
+<method name="onRegistered"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="registrationId" type="java.lang.String">
+</parameter>
+</method>
+<method name="onUnregistered"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="registrationId" type="java.lang.String">
+</parameter>
+</method>
+<field name="ACTION_PUSH_ACTION_BUTTON_CLICKED"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;com.netmera.mobile.PUSH_ACTION_BUTTON_CLICKED&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EXTRA_CLICKED_ACTION_BUTTON_TITLE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;clickedButtonTitle&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EXTRA_INCOMING_MESSAGE_TEXT"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;netmera_push_data&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EXTRA_NOTIFICATION_INTERNAL_ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;requestCode&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EXTRA_NOTIFICATION_NETMERA_ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;netmera_pushId&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EXTRA_PUSH_TYPE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;netmera_push_type&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EXTRA_TRIG"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;trig&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="NetmeraInteractivePushObject"
+ extends="com.netmera.mobile.NetmeraPushObject"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="NetmeraInteractivePushObject"
+ type="com.netmera.mobile.NetmeraInteractivePushObject"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="getButtonSet"
+ return="com.netmera.mobile.NetmeraPushActionButtonSet"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="setButtonSet"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="buttonSet" type="com.netmera.mobile.NetmeraPushActionButtonSet">
+</parameter>
+</method>
+</class>
+<class name="NetmeraJavascriptInterface"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="NetmeraJavascriptInterface"
+ type="com.netmera.mobile.NetmeraJavascriptInterface"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="object" type="java.lang.Object">
+</parameter>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</constructor>
+<method name="getName"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getObject"
+ return="java.lang.Object"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="setName"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="setObject"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="object" type="java.lang.Object">
+</parameter>
+</method>
+</class>
+<class name="NetmeraLocalSession"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="clearAttributes"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="sessionFileName" type="java.lang.String">
+</parameter>
+</method>
+<method name="contains"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="sessionFileName" type="java.lang.String">
+</parameter>
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method name="getAll"
+ return="java.util.Map&lt;java.lang.String, ?&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="sessionFileName" type="java.lang.String">
+</parameter>
+</method>
+<method name="getBoolean"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="sessionFileName" type="java.lang.String">
+</parameter>
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="defValue" type="boolean">
+</parameter>
+</method>
+<method name="getFloat"
+ return="float"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="sessionFileName" type="java.lang.String">
+</parameter>
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="defValue" type="java.lang.Float">
+</parameter>
+</method>
+<method name="getInstance"
+ return="com.netmera.mobile.NetmeraLocalSession"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method name="getInteger"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="sessionFileName" type="java.lang.String">
+</parameter>
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="defValue" type="int">
+</parameter>
+</method>
+<method name="getLong"
+ return="long"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="sessionFileName" type="java.lang.String">
+</parameter>
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="defValue" type="long">
+</parameter>
+</method>
+<method name="getString"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="sessionFileName" type="java.lang.String">
+</parameter>
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="defValue" type="java.lang.String">
+</parameter>
+</method>
+<method name="isSessionFileExists"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="sessionFileName" type="java.lang.String">
+</parameter>
+</method>
+<method name="put"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="sessionFileName" type="java.lang.String">
+</parameter>
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.Object">
+</parameter>
+</method>
+<method name="removeAttribute"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="sessionFileName" type="java.lang.String">
+</parameter>
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class name="NetmeraLocationService"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="init"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="locationSettings" type="com.netmera.mobile.NetmeraLocationSettings">
+</parameter>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<exception name="NetmeraException" type="com.netmera.mobile.NetmeraException">
+</exception>
+</method>
+<method name="startLocationService"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="stopLocationService"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="NetmeraLocationSettings"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="NetmeraLocationSettings"
+ type="com.netmera.mobile.NetmeraLocationSettings"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="getFastestInterval"
+ return="long"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getIntervalMeters"
+ return="long"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getIntervalSeconds"
+ return="long"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getPriority"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="setFastestInterval"
+ return="com.netmera.mobile.NetmeraLocationSettings"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="fastestInterval" type="long">
+</parameter>
+</method>
+<method name="setIntervalMeters"
+ return="com.netmera.mobile.NetmeraLocationSettings"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="intervalMeters" type="long">
+</parameter>
+</method>
+<method name="setIntervalSeconds"
+ return="com.netmera.mobile.NetmeraLocationSettings"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="intervalSeconds" type="long">
+</parameter>
+</method>
+<method name="setPriority"
+ return="com.netmera.mobile.NetmeraLocationSettings"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="priority" type="int">
+</parameter>
+</method>
+<field name="PRIORITY_BALANCED_POWER_ACCURACY"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="102"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PRIORITY_HIGH_ACCURACY"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="100"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PRIORITY_LOW_POWER"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="104"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PRIORITY_NO_POWER"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="105"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="NetmeraPopup"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="NetmeraPopup"
+ type="com.netmera.mobile.NetmeraPopup"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="getAutoTriggerOption"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
+<method name="getCreateDate"
+ return="java.util.Date"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getEventType"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getIsSeen"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getPopupContentHtml"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getPopupId"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getSendDate"
+ return="java.util.Date"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getTitle"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="setAutoTriggerOption"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="autoTriggerOption" type="java.lang.String">
+</parameter>
+</method>
+<method name="setCreateDate"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="createDate" type="java.util.Date">
+</parameter>
+</method>
+<method name="setEventType"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="eventType" type="java.lang.String">
+</parameter>
+</method>
+<method name="setIsSeen"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="isSeen" type="boolean">
+</parameter>
+</method>
+<method name="setPopupContentHtml"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="popupContentHtml" type="java.lang.String">
+</parameter>
+</method>
+<method name="setPopupId"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="popupId" type="java.lang.String">
+</parameter>
+</method>
+<method name="setSeen"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="isSeen" type="boolean">
+</parameter>
+</method>
+<method name="setSendDate"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="sendDate" type="java.util.Date">
+</parameter>
+</method>
+<method name="setTitle"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="title" type="java.lang.String">
+</parameter>
+</method>
+<method name="show"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="activity" type="android.app.Activity">
+</parameter>
+</method>
+<method name="show"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="popupWebView" type="android.webkit.WebView">
+</parameter>
+</method>
+<method name="show"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="popupWebView" type="android.webkit.WebView">
+</parameter>
+<parameter name="callback" type="com.netmera.mobile.NetmeraWebViewCallback">
+</parameter>
+</method>
+</class>
+<class name="NetmeraPopup.EventType"
+ extends="java.lang.Object"
+ abstract="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="NetmeraPopup.EventType"
+ type="com.netmera.mobile.NetmeraPopup.EventType"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="getRealEventName"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="et" type="java.lang.String">
+</parameter>
+</method>
+<field name="APP_OPENED"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;e:ao&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="NetmeraPopupService"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="addEventRelatedPopupsToMapIfAny"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="eventType" type="java.lang.String">
+</parameter>
+</method>
+<method name="appHasPopupToShow"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="appHasPopupToShow"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="eventName" type="java.lang.String">
+</parameter>
+</method>
+<method name="getAllPopupsToShow"
+ return="java.util.List&lt;com.netmera.mobile.NetmeraPopup&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getEventRelatedPopupsToShow"
+ return="java.util.List&lt;com.netmera.mobile.NetmeraPopup&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="eventName" type="java.lang.String">
+</parameter>
+</method>
+<method name="getInstance"
+ return="com.netmera.mobile.NetmeraPopupService"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
+<method name="isRegistered"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="setPopupStateListener"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="listener" type="com.netmera.mobile.NetmeraPopupService.PopupStateListener">
+</parameter>
+</method>
+<method name="updateCache"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="netmeraPopup" type="com.netmera.mobile.NetmeraPopup">
+</parameter>
+</method>
+<field name="DESERVED_EVENT_POPUPS"
+ type="java.util.Map"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</field>
+<field name="POPUP_CACHE_FILE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;NetmeraPopupList&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</field>
+<field name="mListener"
+ type="com.netmera.mobile.NetmeraPopupService.PopupStateListener"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</field>
+</class>
+<interface name="NetmeraPopupService.PopupStateListener"
+ abstract="true"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="onEvent"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="popups" type="java.util.List&lt;com.netmera.mobile.NetmeraPopup&gt;">
+</parameter>
+<parameter name="eventType" type="java.lang.String">
+</parameter>
+</method>
+<method name="onReady"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</interface>
+<class name="NetmeraProperties"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="get"
+ return="com.netmera.mobile.NetmeraProperties"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
+<method name="getApiKey"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getGoogleProjectNumber"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getPushActivityClass"
+ return="java.lang.Class&lt;? extends android.app.Activity&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isExceptionReportingEnabled"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isLocationTrackingEnabled"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isPopupEnabled"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isPushInboxEnabled"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isRefreshGcmId"
+ return="java.lang.Boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+</method>
+<method name="setApiKey"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="apiKey" type="java.lang.String">
+</parameter>
+</method>
+<method name="setExceptionReportingEnabled"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="exceptionReportingEnabled" type="boolean">
+</parameter>
+</method>
+<method name="setGoogleProjectNumber"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="googleProjectNumber" type="java.lang.String">
+</parameter>
+</method>
+<method name="setLocationTrackingEnabled"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="locationTrackingEnabled" type="boolean">
+</parameter>
+</method>
+<method name="setPopupEnabled"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="popupEnabled" type="boolean">
+</parameter>
+</method>
+<method name="setPushActivityClass"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pushActivityClass" type="java.lang.Class&lt;? extends android.app.Activity&gt;">
+</parameter>
+</method>
+<method name="setPushInboxEnabled"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pushInboxEnabled" type="boolean">
+</parameter>
+</method>
+<method name="setRefreshGcmId"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="refreshGcmId" type="java.lang.Boolean">
+</parameter>
+</method>
+</class>
+<class name="NetmeraProperties.Builder"
+ extends="java.lang.Object"
+ abstract="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="NetmeraProperties.Builder"
+ type="com.netmera.mobile.NetmeraProperties.Builder"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="apiKey" type="java.lang.String">
+</parameter>
+</constructor>
+<method name="apiKey"
+ return="com.netmera.mobile.NetmeraProperties.Builder"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="apiKey" type="java.lang.String">
+</parameter>
+</method>
+<method name="build"
+ return="com.netmera.mobile.NetmeraProperties"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="exceptionReportingEnabled"
+ return="com.netmera.mobile.NetmeraProperties.Builder"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="enabled" type="boolean">
+</parameter>
+</method>
+<method name="googleProjectNumber"
+ return="com.netmera.mobile.NetmeraProperties.Builder"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="googleProjectNumber" type="java.lang.String">
+</parameter>
+</method>
+<method name="locationTrackingEnabled"
+ return="com.netmera.mobile.NetmeraProperties.Builder"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="enabled" type="boolean">
+</parameter>
+</method>
+<method name="logLevel"
+ return="com.netmera.mobile.NetmeraProperties.Builder"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="logLevel" type="com.netmera.mobile.Logging.LogLevel">
+</parameter>
+</method>
+<method name="popupEnabled"
+ return="com.netmera.mobile.NetmeraProperties.Builder"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="enabled" type="boolean">
+</parameter>
+</method>
+<method name="pushActivityClass"
+ return="com.netmera.mobile.NetmeraProperties.Builder"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pushActivityClass" type="java.lang.Class&lt;? extends android.app.Activity&gt;">
+</parameter>
+</method>
+<method name="pushInboxEnabled"
+ return="com.netmera.mobile.NetmeraProperties.Builder"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="enabled" type="boolean">
+</parameter>
+</method>
+</class>
+<class name="NetmeraPushActionButton"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="getAction"
+ return="com.netmera.mobile.NetmeraPushActionButton.ButtonAction"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getIconName"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getLabel"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getParams"
+ return="java.util.Map&lt;java.lang.String, java.lang.String&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getWebPage"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isPerformInBackground"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="setAction"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="buttonAction" type="com.netmera.mobile.NetmeraPushActionButton.ButtonAction">
+</parameter>
+</method>
+<method name="setIconName"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="iconName" type="java.lang.String">
+</parameter>
+</method>
+<method name="setLabel"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="label" type="java.lang.String">
+</parameter>
+</method>
+<method name="setParams"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="buttonParams" type="java.util.Map&lt;java.lang.String, java.lang.String&gt;">
+</parameter>
+</method>
+<method name="setPerformInBackground"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="performInBackground" type="boolean">
+</parameter>
+</method>
+<method name="setWebPage"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="webPage" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class name="NetmeraPushActionButton.Builder"
+ extends="java.lang.Object"
+ abstract="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="NetmeraPushActionButton.Builder"
+ type="com.netmera.mobile.NetmeraPushActionButton.Builder"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="label" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor name="NetmeraPushActionButton.Builder"
+ type="com.netmera.mobile.NetmeraPushActionButton.Builder"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="label" type="java.lang.String">
+</parameter>
+<parameter name="iconName" type="java.lang.String">
+</parameter>
+</constructor>
+<method name="build"
+ return="com.netmera.mobile.NetmeraPushActionButton"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="iconName"
+ return="com.netmera.mobile.NetmeraPushActionButton.Builder"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="iconName" type="java.lang.String">
+</parameter>
+</method>
+<method name="label"
+ return="com.netmera.mobile.NetmeraPushActionButton.Builder"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="label" type="java.lang.String">
+</parameter>
+</method>
+<method name="performInBackground"
+ return="com.netmera.mobile.NetmeraPushActionButton.Builder"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="performInBackground" type="boolean">
+</parameter>
+</method>
+</class>
+<class name="NetmeraPushActionButton.ButtonAction"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="valueOf"
+ return="com.netmera.mobile.NetmeraPushActionButton.ButtonAction"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="com.netmera.mobile.NetmeraPushActionButton.ButtonAction[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="NetmeraPushActionButtonSet"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="getActionActivity"
+ return="java.lang.Class&lt;? extends android.app.Activity&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getButtons"
+ return="java.util.List&lt;com.netmera.mobile.NetmeraPushActionButton&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getName"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="setActionActivity"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="actionActivity" type="java.lang.Class&lt;? extends android.app.Activity&gt;">
+</parameter>
+</method>
+<method name="setButtons"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="buttons" type="java.util.List&lt;com.netmera.mobile.NetmeraPushActionButton&gt;">
+</parameter>
+</method>
+<method name="setName"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class name="NetmeraPushActionButtonSet.Builder"
+ extends="java.lang.Object"
+ abstract="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="NetmeraPushActionButtonSet.Builder"
+ type="com.netmera.mobile.NetmeraPushActionButtonSet.Builder"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor name="NetmeraPushActionButtonSet.Builder"
+ type="com.netmera.mobile.NetmeraPushActionButtonSet.Builder"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="actionActivity" type="java.lang.Class&lt;? extends android.app.Activity&gt;">
+</parameter>
+<parameter name="buttons" type="java.util.List&lt;com.netmera.mobile.NetmeraPushActionButton&gt;">
+</parameter>
+</constructor>
+<method name="actionActivity"
+ return="com.netmera.mobile.NetmeraPushActionButtonSet.Builder"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="actionActivity" type="java.lang.Class&lt;? extends android.app.Activity&gt;">
+</parameter>
+</method>
+<method name="addButton"
+ return="com.netmera.mobile.NetmeraPushActionButtonSet.Builder"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="button" type="com.netmera.mobile.NetmeraPushActionButton">
+</parameter>
+</method>
+<method name="build"
+ return="com.netmera.mobile.NetmeraPushActionButtonSet"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="name"
+ return="com.netmera.mobile.NetmeraPushActionButtonSet.Builder"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="setButtons"
+ return="com.netmera.mobile.NetmeraPushActionButtonSet.Builder"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="buttons" type="java.util.List&lt;com.netmera.mobile.NetmeraPushActionButton&gt;">
+</parameter>
+</method>
+</class>
+<class name="NetmeraPushActionButtonSetList"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="getButtonSets"
+ return="java.util.List&lt;com.netmera.mobile.NetmeraPushActionButtonSet&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="setButtonSets"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="buttonSets" type="java.util.List&lt;com.netmera.mobile.NetmeraPushActionButtonSet&gt;">
+</parameter>
+</method>
+</class>
+<class name="NetmeraPushActionButtonSetList.Builder"
+ extends="java.lang.Object"
+ abstract="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="NetmeraPushActionButtonSetList.Builder"
+ type="com.netmera.mobile.NetmeraPushActionButtonSetList.Builder"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="addNotificationActionButtonSet"
+ return="com.netmera.mobile.NetmeraPushActionButtonSetList.Builder"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="buttonSet" type="com.netmera.mobile.NetmeraPushActionButtonSet">
+</parameter>
+</method>
+<method name="build"
+ return="com.netmera.mobile.NetmeraPushActionButtonSetList"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="NetmeraPushInboxDataController"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="NetmeraPushInboxDataController"
+ type="com.netmera.mobile.NetmeraPushInboxDataController"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="getNotifications"
+ return="java.util.List&lt;com.netmera.mobile.NetmeraPushObject&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="notificationTypes" type="com.netmera.mobile.NetmeraPushObject.NotificationType[]">
+</parameter>
+<parameter name="pushStatus" type="com.netmera.mobile.NetmeraPushObject.PushStatus[]">
+</parameter>
+<parameter name="category" type="java.lang.String">
+</parameter>
+<exception name="NetmeraException" type="com.netmera.mobile.NetmeraException">
+</exception>
+</method>
+<method name="getNotificationsInBackground"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="notificationTypes" type="com.netmera.mobile.NetmeraPushObject.NotificationType[]">
+</parameter>
+<parameter name="pushStatus" type="com.netmera.mobile.NetmeraPushObject.PushStatus[]">
+</parameter>
+<parameter name="category" type="java.lang.String">
+</parameter>
+<parameter name="callback" type="com.netmera.mobile.NetmeraCallback&lt;java.util.List&lt;com.netmera.mobile.NetmeraPushObject&gt;&gt;">
+</parameter>
+</method>
+<method name="getNumberOfNotifications"
+ return="java.lang.Long"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="notificationTypes" type="com.netmera.mobile.NetmeraPushObject.NotificationType[]">
+</parameter>
+<parameter name="pushStatus" type="com.netmera.mobile.NetmeraPushObject.PushStatus[]">
+</parameter>
+<parameter name="category" type="java.lang.String">
+</parameter>
+<exception name="NetmeraException" type="com.netmera.mobile.NetmeraException">
+</exception>
+</method>
+<method name="getNumberOfNotificationsInBackground"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="notificationTypes" type="com.netmera.mobile.NetmeraPushObject.NotificationType[]">
+</parameter>
+<parameter name="pushStatus" type="com.netmera.mobile.NetmeraPushObject.PushStatus[]">
+</parameter>
+<parameter name="category" type="java.lang.String">
+</parameter>
+<parameter name="callback" type="com.netmera.mobile.NetmeraCallback&lt;java.lang.Long&gt;">
+</parameter>
+</method>
+<method name="getUserRelatedPushNotifications"
+ return="java.util.List&lt;com.netmera.mobile.NetmeraRichPushObject&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="cacheType" type="com.netmera.mobile.NetmeraCache.CacheType">
+</parameter>
+<exception name="NetmeraException" type="com.netmera.mobile.NetmeraException">
+</exception>
+</method>
+<method name="getUserRelatedPushNotifications"
+ return="java.util.List&lt;com.netmera.mobile.NetmeraRichPushObject&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<exception name="NetmeraException" type="com.netmera.mobile.NetmeraException">
+</exception>
+</method>
+<method name="getUserRelatedPushNotificationsInBackground"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="cacheType" type="com.netmera.mobile.NetmeraCache.CacheType">
+</parameter>
+<parameter name="callback" type="com.netmera.mobile.NetmeraCallback&lt;java.util.List&lt;com.netmera.mobile.NetmeraRichPushObject&gt;&gt;">
+</parameter>
+</method>
+<method name="getUserRelatedPushNotificationsInBackground"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="callback" type="com.netmera.mobile.NetmeraCallback&lt;java.util.List&lt;com.netmera.mobile.NetmeraRichPushObject&gt;&gt;">
+</parameter>
+</method>
+<method name="markPushAsDeleted"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="notificationIds" type="java.lang.String...">
+</parameter>
+<exception name="NetmeraException" type="com.netmera.mobile.NetmeraException">
+</exception>
+</method>
+<method name="markPushAsRead"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="notificationIds" type="java.lang.String...">
+</parameter>
+<exception name="NetmeraException" type="com.netmera.mobile.NetmeraException">
+</exception>
+</method>
+<method name="markPushAsUnread"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="notificationIds" type="java.lang.String...">
+</parameter>
+<exception name="NetmeraException" type="com.netmera.mobile.NetmeraException">
+</exception>
+</method>
+<method name="toMap"
+ return="java.util.Map&lt;java.lang.String, java.lang.String&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="object" type="org.json.JSONObject">
+</parameter>
+<exception name="JSONException" type="org.json.JSONException">
+</exception>
+</method>
+</class>
+<class name="NetmeraPushObject"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="NetmeraPushObject"
+ type="com.netmera.mobile.NetmeraPushObject"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="getCategory"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getCreateDate"
+ return="java.util.Date"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getCustomData"
+ return="java.util.Map&lt;java.lang.String, java.lang.String&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getEventCustomData"
+ return="java.util.Map&lt;java.lang.String, java.lang.String&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getLogoUrl"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getMessage"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getNotificationId"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getPushStatus"
+ return="com.netmera.mobile.NetmeraPushObject.PushStatus"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getPushType"
+ return="com.netmera.mobile.NetmeraPushObject.NotificationType"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getSendDate"
+ return="java.util.Date"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getTitle"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isBackgroundPush"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="putCustomData"
+ return="com.netmera.mobile.NetmeraPushObject"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+<method name="setBackgroundPush"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="isBackgroundPush" type="boolean">
+</parameter>
+</method>
+<method name="setCategory"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="category" type="java.lang.String">
+</parameter>
+</method>
+<method name="setCreateDate"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="createDate" type="java.util.Date">
+</parameter>
+</method>
+<method name="setCustomData"
+ return="com.netmera.mobile.NetmeraPushObject"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="customData" type="java.util.Map&lt;java.lang.String, java.lang.String&gt;">
+</parameter>
+</method>
+<method name="setEventCustomData"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="eventCustomData" type="java.util.Map&lt;java.lang.String, java.lang.String&gt;">
+</parameter>
+</method>
+<method name="setLogoUrl"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="logoUrl" type="java.lang.String">
+</parameter>
+</method>
+<method name="setMessage"
+ return="com.netmera.mobile.NetmeraPushObject"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="message" type="java.lang.String">
+</parameter>
+</method>
+<method name="setNotificationId"
+ return="com.netmera.mobile.NetmeraPushObject"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="notificationId" type="java.lang.String">
+</parameter>
+</method>
+<method name="setPushStatus"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pushStatus" type="com.netmera.mobile.NetmeraPushObject.PushStatus">
+</parameter>
+</method>
+<method name="setPushType"
+ return="com.netmera.mobile.NetmeraPushObject"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="pushType" type="com.netmera.mobile.NetmeraPushObject.NotificationType">
+</parameter>
+</method>
+<method name="setSendDate"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="sendDate" type="java.util.Date">
+</parameter>
+</method>
+<method name="setTitle"
+ return="com.netmera.mobile.NetmeraPushObject"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="title" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class name="NetmeraPushObject.NotificationType"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="valueOf"
+ return="com.netmera.mobile.NetmeraPushObject.NotificationType"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="com.netmera.mobile.NetmeraPushObject.NotificationType[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="NetmeraPushObject.PushStatus"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="valueOf"
+ return="com.netmera.mobile.NetmeraPushObject.PushStatus"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="com.netmera.mobile.NetmeraPushObject.PushStatus[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="NetmeraPushSender"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="NetmeraPushSender"
+ type="com.netmera.mobile.NetmeraPushSender"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="addTag"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="tag" type="java.lang.String">
+</parameter>
+</method>
+<method name="getTags"
+ return="java.util.List&lt;java.lang.String&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="sendPushNotification"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="push" type="com.netmera.mobile.NetmeraPushObject">
+</parameter>
+<exception name="NetmeraException" type="com.netmera.mobile.NetmeraException">
+</exception>
+</method>
+<method name="sendPushNotificationInBackground"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="push" type="com.netmera.mobile.NetmeraPushObject">
+</parameter>
+<parameter name="callback" type="com.netmera.mobile.NetmeraCallback&lt;java.lang.Void&gt;">
+</parameter>
+</method>
+<method name="sendPushNotificationInBackground"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="push" type="com.netmera.mobile.NetmeraPushObject">
+</parameter>
+</method>
+<method name="setBoxPush"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="firstPoint" type="com.netmera.mobile.NetmeraGeoLocation">
+</parameter>
+<parameter name="secondPoint" type="com.netmera.mobile.NetmeraGeoLocation">
+</parameter>
+</method>
+<method name="setCirclePush"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="startLocation" type="com.netmera.mobile.NetmeraGeoLocation">
+</parameter>
+<parameter name="distance" type="double">
+</parameter>
+</method>
+<method name="setSendToAndroid"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="sendToAndroid" type="boolean">
+</parameter>
+</method>
+<method name="setSendToIOS"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="sendToIOS" type="boolean">
+</parameter>
+</method>
+<method name="setTags"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="tags" type="java.util.List&lt;java.lang.String&gt;">
+</parameter>
+</method>
+<method name="whereCustomFieldEqual"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.Object">
+</parameter>
+</method>
+</class>
+<class name="NetmeraPushService"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="NetmeraPushService"
+ type="com.netmera.mobile.NetmeraPushService"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="disablePushInbox"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="enablePushInbox"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getDeviceDetailInBackground"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="callback" type="com.netmera.mobile.NetmeraCallback&lt;com.netmera.mobile.NetmeraDeviceDetail&gt;">
+</parameter>
+</method>
+<method name="getDeviceGroupsInBackground"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="deprecated"
+ visibility="public"
+>
+<parameter name="callback" type="com.netmera.mobile.NetmeraCallback&lt;java.util.List&lt;java.lang.String&gt;&gt;">
+</parameter>
+<exception name="NetmeraException" type="com.netmera.mobile.NetmeraException">
+</exception>
+</method>
+<method name="getDeviceGroupsInBackground"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="deprecated"
+ visibility="public"
+>
+<parameter name="max" type="int">
+</parameter>
+<parameter name="page" type="int">
+</parameter>
+<parameter name="callback" type="com.netmera.mobile.NetmeraCallback&lt;java.util.List&lt;java.lang.String&gt;&gt;">
+</parameter>
+<exception name="NetmeraException" type="com.netmera.mobile.NetmeraException">
+</exception>
+</method>
+<method name="getNotification"
+ return="com.netmera.mobile.NetmeraPushObject"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pushId" type="java.lang.String">
+</parameter>
+<exception name="NetmeraException" type="com.netmera.mobile.NetmeraException">
+</exception>
+</method>
+<method name="getNotificationInBackground"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pushId" type="java.lang.String">
+</parameter>
+<parameter name="callback" type="com.netmera.mobile.NetmeraCallback&lt;com.netmera.mobile.NetmeraPushObject&gt;">
+</parameter>
+</method>
+<method name="getPushMessage"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getRegistrationId"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method name="getTagsInBackground"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="callback" type="com.netmera.mobile.NetmeraCallback&lt;java.util.List&lt;java.lang.String&gt;&gt;">
+</parameter>
+</method>
+<method name="getTagsInBackground"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="max" type="int">
+</parameter>
+<parameter name="page" type="int">
+</parameter>
+<parameter name="callback" type="com.netmera.mobile.NetmeraCallback&lt;java.util.List&lt;java.lang.String&gt;&gt;">
+</parameter>
+</method>
+<method name="handleInteractivePush"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="activity" type="android.app.Activity">
+</parameter>
+</method>
+<method name="handleInteractivePush"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="intent" type="android.content.Intent">
+</parameter>
+<parameter name="webView" type="android.webkit.WebView">
+</parameter>
+</method>
+<method name="handleRichPush"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pushActivity" type="android.app.Activity">
+</parameter>
+<exception name="NetmeraException" type="com.netmera.mobile.NetmeraException">
+</exception>
+</method>
+<method name="handleRichPush"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pushActivity" type="android.app.Activity">
+</parameter>
+<parameter name="javascriptInterface" type="com.netmera.mobile.NetmeraJavascriptInterface">
+</parameter>
+<exception name="NetmeraException" type="com.netmera.mobile.NetmeraException">
+</exception>
+</method>
+<method name="handleRichPush"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pushActivity" type="android.app.Activity">
+</parameter>
+<parameter name="javascriptInterfaces" type="java.util.List&lt;com.netmera.mobile.NetmeraJavascriptInterface&gt;">
+</parameter>
+<exception name="NetmeraException" type="com.netmera.mobile.NetmeraException">
+</exception>
+</method>
+<method name="handleRichPushWithId"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="richPushWebView" type="android.webkit.WebView">
+</parameter>
+<parameter name="messageId" type="java.lang.String">
+</parameter>
+<exception name="NetmeraException" type="com.netmera.mobile.NetmeraException">
+</exception>
+</method>
+<method name="handleRichPushWithId"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="richPushWebView" type="android.webkit.WebView">
+</parameter>
+<parameter name="messageId" type="java.lang.String">
+</parameter>
+<parameter name="callback" type="com.netmera.mobile.NetmeraWebViewCallback">
+</parameter>
+<exception name="NetmeraException" type="com.netmera.mobile.NetmeraException">
+</exception>
+</method>
+<method name="isRegistered"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method name="isRichPush"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="register"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="senderId" type="java.lang.String">
+</parameter>
+<parameter name="pushActivityClass" type="java.lang.Class&lt;? extends android.app.Activity&gt;">
+</parameter>
+<exception name="NetmeraException" type="com.netmera.mobile.NetmeraException">
+</exception>
+</method>
+<method name="register"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="deviceDetail" type="com.netmera.mobile.NetmeraDeviceDetail">
+</parameter>
+<exception name="NetmeraException" type="com.netmera.mobile.NetmeraException">
+</exception>
+</method>
+<method name="savePushActionButtonSet"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="buttonSetList" type="com.netmera.mobile.NetmeraPushActionButtonSetList">
+</parameter>
+<exception name="NetmeraException" type="com.netmera.mobile.NetmeraException">
+</exception>
+</method>
+<method name="savePushActionButtonSetInBackground"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="buttonSetList" type="com.netmera.mobile.NetmeraPushActionButtonSetList">
+</parameter>
+<parameter name="callback" type="com.netmera.mobile.NetmeraCallback&lt;java.lang.Void&gt;">
+</parameter>
+</method>
+<method name="unregister"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method name="unregister"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pushDeviceDetail" type="com.netmera.mobile.NetmeraDeviceDetail">
+</parameter>
+</method>
+</class>
+<class name="NetmeraRichPushObject"
+ extends="com.netmera.mobile.NetmeraPushObject"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="NetmeraRichPushObject"
+ type="com.netmera.mobile.NetmeraRichPushObject"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="getExpirationDate"
+ return="java.util.Date"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getInjectScript"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getRichPushHtml"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="setExpirationDate"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="expirationDate" type="java.util.Date">
+</parameter>
+</method>
+<method name="setInjectScript"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="protected"
+>
+<parameter name="injectScript" type="java.lang.String">
+</parameter>
+</method>
+<method name="setRichPushHtml"
+ return="com.netmera.mobile.NetmeraRichPushObject"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="richPushHtml" type="java.lang.String">
+</parameter>
+</method>
+<method name="show"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pushWebView" type="android.webkit.WebView">
+</parameter>
+</method>
+</class>
+<class name="NetmeraRuntimeException"
+ extends="java.lang.RuntimeException"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="NetmeraRuntimeException"
+ type="com.netmera.mobile.NetmeraRuntimeException"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+<constructor name="NetmeraRuntimeException"
+ type="com.netmera.mobile.NetmeraRuntimeException"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="message" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor name="NetmeraRuntimeException"
+ type="com.netmera.mobile.NetmeraRuntimeException"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+</class>
+<interface name="NetmeraWebViewCallback"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="shouldOverrideUrlLoading"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="view" type="android.webkit.WebView">
+</parameter>
+<parameter name="url" type="java.lang.String">
+</parameter>
+</method>
+</interface>
+<class name="NetworkConnectivityListener"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="NetworkConnectivityListener"
+ type="com.netmera.mobile.NetworkConnectivityListener"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="getNetworkInfo"
+ return="android.net.NetworkInfo"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getOtherNetworkInfo"
+ return="android.net.NetworkInfo"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getReason"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getState"
+ return="com.netmera.mobile.NetworkConnectivityListener.State"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isFailOver"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="registerHandler"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="target" type="android.os.Handler">
+</parameter>
+<parameter name="what" type="int">
+</parameter>
+</method>
+<method name="startListening"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method name="stopListening"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="unregisterHandler"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="target" type="android.os.Handler">
+</parameter>
+</method>
+</class>
+<class name="NetworkConnectivityListener.State"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="valueOf"
+ return="com.netmera.mobile.NetworkConnectivityListener.State"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="com.netmera.mobile.NetworkConnectivityListener.State[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="URLConstants"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="setNetmeraSubDomain"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="subDomainName" type="java.lang.String">
+</parameter>
+</method>
+<field name="API_NETMERA_URL"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="APP_CONFIG_URL"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EVENT_URL"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;/event/1.0/fireEvent&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EVENT_URL_BULK"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;/event/1.0/fireEvent/bulk&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="HTTP_CONNECTION_TYPE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;https://&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="INIT_SESSION_URL"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_DOMAIN"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;netmera.com&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="POPUP_REGISTRATION_URL"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;/popup/1.0/registration&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PUSH_REST_URL"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PUSH_REST_VERSION_1_4"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;/1.4/&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PUSH_URL_1_4"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;/push/1.4/notification&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="SDKVERSION_PARAMS"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;sdkVersion&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="SDK_PARAMS"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;sdk&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+</package>
+<package name="com.netmera.mobile.util"
+>
+<class name="GCMConstants"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<field name="ERROR_SERVICE_NOT_AVAILABLE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;SERVICE_NOT_AVAILABLE&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EXTRA_APPLICATION_PENDING_INTENT"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;app&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EXTRA_ERROR"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;error&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EXTRA_REGISTRATION_ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;registration_id&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EXTRA_SENDER"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;sender&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EXTRA_SPECIAL_MESSAGE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;message_type&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EXTRA_TOKEN"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;token&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EXTRA_TOTAL_DELETED"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;total_deleted&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EXTRA_UNREGISTERED"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;unregistered&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="INTENT_FROM_GCM_LIBRARY_RETRY"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;com.google.android.gcm.intent.RETRY&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="INTENT_FROM_GCM_MESSAGE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;com.google.android.c2dm.intent.RECEIVE&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="INTENT_FROM_GCM_REGISTRATION_CALLBACK"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;com.google.android.c2dm.intent.REGISTRATION&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="INTENT_TO_GCM_REGISTRATION"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;com.google.android.c2dm.intent.REGISTER&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="INTENT_TO_GCM_UNREGISTRATION"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;com.google.android.c2dm.intent.UNREGISTER&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PERMISSION_GCM_INTENTS"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;com.google.android.c2dm.permission.SEND&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="VALUE_DELETED_MESSAGES"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;deleted_messages&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="HttpUtils"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="HttpUtils"
+ type="com.netmera.mobile.util.HttpUtils"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="toByteArray"
+ return="byte[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="url" type="java.net.URL">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method name="toByteArray"
+ return="byte[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="is" type="java.io.InputStream">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class name="NetmeraMobileConstants"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<field name="APP_CONFIG_DATA"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;appConfigData&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="APP_CONFIG_DATA_JSON"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;appConfigDataJson&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="APP_CONFIG_DATA_LAST_UPDATE_TIME"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;appConfigLastUpdateTime&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="APP_CONFIG_OFFER_NAME_PARAM"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;offerName&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="APP_CONFIG_SERVICES_NAME_PARAM"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;services&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="APP_IID_STR"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;appIIDStr&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="APP_INFO"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;info&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="APP_INFO_CLIENT_TIME_STAMP"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;cts&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="APP_INFO_LOC"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;loc&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="APP_INFO_STR"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;appInfoStr&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="CHARSET_UTF_8"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;UTF-8&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="CONTEXT"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;context&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="DATE_FORMAT"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;yyyy-MM-dd\&pos;T\&pos;HH:mm:ss.SSS\&pos;Z\&pos;&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="DID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;did&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EVENT_ATTR_ACTION_BUTTON"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;btn&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EVENT_ATTR_APP_STATUS"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;as&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EVENT_ATTR_PUSH_TYPE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;pt&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EVENT_DATA"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;data&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EVENT_ERROR_MESSAGE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;em&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EVENT_EXCEPTION_NAME"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;exn&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EVENT_IS_HANDLED"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;ih&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EVENT_MESSAGE_PUSH_CLICKED"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;push_clicked&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EVENT_PARAM_EXCEPTION_AVAILABLE_MEMORY"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;availableMemory&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EVENT_PARAM_EXCEPTION_DATE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;date&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EVENT_PARAM_EXCEPTION_THREAD_NAME"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;threadName&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EVENT_PARAM_EXCEPTION_TOTAL_MEMORY"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;totalMemory&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EVENT_STACK_TRACE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;st&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EVENT_TIME_IN_APP"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;tas&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EVENT_TIME_IN_SCREENS"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;tips&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EVENT_TYPE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;et&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EVENT_TYPE_APP_EXCEPTION"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;nm:AppExceptionEvent&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EVENT_TYPE_CLOSE_APP"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;nm:CloseAppEvent&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EVENT_TYPE_OPEN_APP"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;nm:OpenAppEvent&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EVENT_TYPE_POPUP_ACTION"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;nm:PopupActionEvent&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EVENT_TYPE_POPUP_SHOW"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;nm:PopupShownEvent&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EVENT_TYPE_PUSH_CLICKED"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;nm:PushClickedEvent&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EVENT_TYPE_PUSH_DELETE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;nm:PushDeletedEvent&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EVENT_TYPE_PUSH_READ"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;nm:PushReadEvent&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EVENT_TYPE_PUSH_RECEIVED"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;nm:PushReceivedEvent&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EVENT_TYPE_PUSH_UNREAD"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;nm:PushUnreadEvent&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EVENT_TYPE_RICH_PUSH_ACTION"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;nm:RichPushActionEvent&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EVENT_TYPE_TEST_GROUP"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;nm:AddTestGroupEvent&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EVENT_TYPE_USER_LOCATION_CHANGED"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;nm:UserLocationChangedEvent&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EVENT_USER_LOCATION"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;uloc&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="HTTP_HEADER_APIKEY"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;X-netmera-api-key&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="HTTP_HEADER_JSON_CONTENT_TYPE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;application/json;charset=UTF-8&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="HTTP_HEADER_SDK"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;X-netmera-sdk&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="HTTP_HEADER_SDK_VERSION"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;X-netmera-sdk-version&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="IID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;iid&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="JSON_CODE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;code&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="JSON_MESSAGE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;message&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="JSON_RESULT"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;result&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="KEY"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;key&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="LOADING_MESSAGE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;Loading...&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="MAX"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;max&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="METADATA_PUSH_ICON"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;com.netmera.mobile.push_icon&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="METHOD_GET"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;GET&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="METHOD_POST"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;POST&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_APIKEY"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;apiKey&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_CACHE_USER_KEY"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;netmeraUser&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_CLICKED_ACTION_BUTTON"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;clickedButton&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_GENERAL_SETTINGS"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;generalSettings&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_GEOFENCE_SETTINGS"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;geoFenceSettings&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_LAST_PUSH_ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;netmera.last.push.id&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSHINBOX_PUSH_COUNT"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;count&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_ACTION_ACTIVITY"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;aa&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_ACTION_FIRST_BUTTON_ACTION"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;fb_act&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_ACTION_FIRST_BUTTON_DISMISS"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;fb_dismiss&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_ACTION_FIRST_BUTTON_PARAM_PREFIX"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;fb_prm_&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_ACTION_FIRST_BUTTON_TITLE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;fbt&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_ACTION_FIRST_BUTTON_WEB_PAGE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;fb_pg&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_ACTION_FIRST_ICON_NAME"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;fbi&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_ACTION_PAGE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;page&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_ACTION_PARAMS"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;params&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_ACTION_PASS_PARAM"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;PASS_PARAM&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_ACTION_SECOND_BUTTON_ACTION"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;sb_act&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_ACTION_SECOND_BUTTON_DISMISS"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;sb_dismiss&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_ACTION_SECOND_BUTTON_PARAM_PREFIX"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;sb_prm_&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_ACTION_SECOND_BUTTON_TITLE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;sbt&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_ACTION_SECOND_BUTTON_WEB_PAGE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;sb_pg&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_ACTION_SECOND_ICON_NAME"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;sbi&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_ACTION_WEB_PAGE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;WEB_PAGE&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_ACTIVITY_CLASS"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;NetmeraPushActivity&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_BACKGROUND_PUSH"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;bg&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_BIG_ICON_PATH"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;_nip&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_DEFAULT_APPLICATION_NAME"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;NetmeraPush&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_DELIVERY_REPORT_REQUEST"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;drr&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_DISPLAY_MESSAGE_ACTION"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;com.netmera.mobile.DISPLAY_MESSAGE&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_EXTRA_MESSAGE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;message&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_ID_LIST"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;pushIdList&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_INBOX_ACTIVITY_CLASS"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;com.netmera.pushinbox.NetmeraPushInboxActivity&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_INBOX_SETTINGS"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;pushInboxEnabled&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_INTERACTIVE_ACTION"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;interactiveAction&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_INTERACTIVE_BUTTON_ACTION"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;action&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_INTERACTIVE_BUTTON_SET_NAME"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;buttonSetName&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_INTERACTIVE_FIRST_BUTTON"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;firstButton&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_INTERACTIVE_SECOND_BUTTON"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;secondButton&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_LOCATION_TYPE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;locationType&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_MESSAGE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;message&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_PERMISSION_RECEIVE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;com.netmera.mobile.permission.RECEIVE&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_SEARCH_BOX"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;BOX&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_SEARCH_CIRCLE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;CIRCLE&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_SEARCH_DISTANCE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;distance&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_SEARCH_LATITUDE1"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;lat1&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_SEARCH_LATITUDE2"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;lat2&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_SEARCH_LONGITUDE1"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;lng1&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_SEARCH_LONGITUDE2"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;lng2&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_SETTINGS"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;pushSettings&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_SHOW_INBOX"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;sip&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_SOUND_PATH"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;netmera_sound_path&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_STYLE_ACTION_LIST"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;notificationStyleActions&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_TYPE_ANDROID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;ANDROID&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_TYPE_INTERACTIVE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;INTERACTIVE&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_TYPE_IOS"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;IOS&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_TYPE_RICH"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;RICH&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_TYPE_URL"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;URLPUSH&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_PUSH_VIBRATE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;netmera_vibration&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_RICH_PUSH_HTML"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;richPushHtml&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_RICH_PUSH_SCRIPT"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;injectRichPushScript&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_RICH_PUSH_URL"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;urlPushUrl&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_SDK"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;android&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_SDK_VERSION"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;2.8.3&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_SECURITY_TOKEN"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;st&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_SETTINGS_PARAM_IS_FIRST"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;isFirst&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NETMERA_SETTINGS_PARAM_UNREGISTER_CALLED"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;unregister_called&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NOTIFICATION_ACTION_BUTTON_SET_NAME"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;category&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NOTIFICATION_BIG_PIC_BIG_PIC_PATH"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;_bpp&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NOTIFICATION_BIG_PIC_LARGE_ICON_PATH"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;_bpli&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NOTIFICATION_BIG_TEXT_CONTENT_TITLE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;_btct&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NOTIFICATION_BIG_TEXT_MESSAGE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;_btm&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NOTIFICATION_BIG_TEXT_STYLE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;nm_BT&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NOTIFICATION_CUSTOM_PUSH_TITLE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;_cpt&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NOTIFICATION_INBOX_LINE_MESSAGES"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;_ilm&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NOTIFICATION_INBOX_STYLE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;nm_IS&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NOTIFICATION_SMALL_ICON_PATH"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;_sip&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NOTIFICATION_STANDARD"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;nm_ST&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NOTIFICATION_SUMMARY_TEXT"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;_st&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="NOTIFICATION_VIEW_TYPE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;_pvt&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PAGE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;page&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PARAM_CONFIG"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;cfg&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PARAM_INSTALL"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;inst&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PARAM_POPUPS"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;popups&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PARAM_PUSH"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;push&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PARAM_REFRESH_GCM_ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;refreshGcmRegId&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PARAM_SOUNDS"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;sounds&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="POPUP_AUTO_TRIGGER_OPTION"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;autoTriggerOption&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="POPUP_PARAM_PUSH_INBOX_CATEGORY"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;category&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="POPUP_PARAM_PUSH_INBOX_STATUS"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;pushInboxStatus&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="POPUP_PARAM_PUSH_TYPE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;pushType&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="POPUP_PUSH_TYPE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;POPUP&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="POPUP_READ_STATUS_READ"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;READ&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="POPUP_SEND_DATE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;sendDate&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="POPUP_TITLE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;title&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PROPERTIES_API_KEY"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;apiKey&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PROPERTIES_EXCEPTION_REPORTING_ENABLED"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;exceptionReportingEnabled&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PROPERTIES_FILE_NAME"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;netmera.properties&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PROPERTIES_GOOGLE_PROJECT_NUMBER"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;googleProjectNumber&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PROPERTIES_LOCATION_ENABLED"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;locationEnabled&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PROPERTIES_LOG_LEVEL"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;logLevel&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PROPERTIES_POPUP_ENABLED"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;popupRetrievalOnStartupEnabled&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PROPERTIES_PUSH_ACTIVITY_CLASS_NAME"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;pushActivityClassName&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PROPERTIES_PUSH_INBOX_ENABLED"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;pushInboxEnabled&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PROPERTIES_SUB_DOMAIN"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;netmeraSubDomain&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PUSH_CATEGORY"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;category&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PUSH_CREATE_DATE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;createDate&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PUSH_CUSTOM_EVENT_PARAMETER"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;eventCustomJson&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PUSH_CUSTOM_FIELDS"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;customFields&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PUSH_EXPIRATION_DATE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;expirationDate&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PUSH_ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;pid&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PUSH_LATEST_LOCATION"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;latestLocation&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PUSH_LOCATION"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;pushLocation&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PUSH_LOGO_URL"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;pushLogoUrl&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PUSH_MESSAGE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;notificationMsg&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PUSH_NOTIFICATION"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;notification&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PUSH_NOTIFICATION_ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;notificationId&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PUSH_OVERRIDE_INTERACTIVE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;isInteractive&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PUSH_OVERRIDE_TAGS_FLAG"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;overrideTags&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PUSH_PARAMETER"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;customJson&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PUSH_PLATFORM"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;platform&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PUSH_PLATFORMS"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;platforms&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PUSH_READ_STATUS"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;readStatus&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PUSH_REGISTRATION_ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;registrationId&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PUSH_REST_COUNT"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;/count&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PUSH_REST_REGISTER"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;registration&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PUSH_REST_SAVE_BUTTON_SETS"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;saveButtonSets&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PUSH_REST_SEND"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;notification&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PUSH_RICH_HTML"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;richPushHtml&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PUSH_SEND_DATE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;sendDate&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PUSH_SEND_IN_BACKGROUND"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;sendInBackground&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PUSH_TAGS"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;tags&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PUSH_TARGET"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;target&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PUSH_TIMEZONE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;timeZoneHourOffset&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="PUSH_TITLE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;title&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="SERVICE_CUSTOM_EVENT"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;CUSTOM_EVENT&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="SERVICE_CUSTOM_OPTION"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;CUSTOM_OPTION&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="SERVICE_INTERACTIVE_PUSH"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;INTERACTIVE_PUSH&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="SERVICE_MULTI_USER_ROLE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;MULTI_USER_ROLE&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="SERVICE_PUSH_BROADCAST"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;PUSH_BROADCAST&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="SERVICE_PUSH_POPUP"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;PUSH_POPUP&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="SERVICE_PUSH_SEGMENTATION"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;PUSH_SEGMENTATION&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="SERVICE_RICHPUSH_BEHAVIOUR"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;RICHPUSH_BEHAVIOUR&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="SERVICE_RICHPUSH_GEOFENCE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;RICHPUSH_GEOFENCE&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="SERVICE_RICHPUSH_INBOX"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;RICHPUSH_INBOX&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="SERVICE_RICHPUSH_LOCATION"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;RICHPUSH_LOCATION&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="SERVICE_RICHPUSH_SEGMENTATION"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;RICHPUSH_SEGMENTATION&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="SERVICE_SLA"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;SLA&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="SERVICE_SUPPORT"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;SUPPORT&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="SESSION_ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;sid&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="UDID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;udid&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="VALUE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;value&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="NetmeraPrivacy"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="valueOf"
+ return="com.netmera.mobile.util.NetmeraPrivacy"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="com.netmera.mobile.util.NetmeraPrivacy[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="StringUtils"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="StringUtils"
+ type="com.netmera.mobile.util.StringUtils"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="convertCollectionsToArray"
+ return="java.lang.Object[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="collection" type="java.util.Collection&lt;?&gt;">
+</parameter>
+</method>
+<method name="convertInputStreamToString"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="in" type="java.io.InputStream">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method name="convertStringToDate"
+ return="java.util.Date"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="dateStr" type="java.lang.String">
+</parameter>
+</method>
+<method name="isNotBlank"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="str" type="java.lang.String">
+</parameter>
+</method>
+<method name="join"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="array" type="java.lang.Object[]">
+</parameter>
+<parameter name="separator" type="java.lang.String">
+</parameter>
+</method>
+<method name="nullCheck"
+ return="T"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="argument" type="T">
+</parameter>
+</method>
+<method name="substringAfterLast"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="str" type="java.lang.String">
+</parameter>
+<parameter name="separator" type="java.lang.String">
+</parameter>
+</method>
+<field name="EMPTY"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+</package>
+</api>

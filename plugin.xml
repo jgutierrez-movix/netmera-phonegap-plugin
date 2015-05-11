@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" id="com.netmera.phonegap.plugin" version="0.1.0">
+    <name>netmera-phonegap-plugin</name>
+    <description>Netmera phonegap plugin is designed to register to Netmera Push Service and receive Push notifications</description>
+
+    <js-module src="www/netmera-phonegap-plugin.js" name="NetmeraPlugin">
+		<clobbers target="window.netmeraPlugin" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+		<preference name="NM_API_KEY" />
+		<preference name="GOOGLE_PROJECT_ID" />
+
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="NetmeraPlugin">
+				<param name="android-package" value="org.apache.cordova.core.NetmeraPlugin" />
+			</feature>
+		</config-file>
+        
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+			<service android:name="com.netmera.mobile.NetmeraIntentService" />
+			<receiver android:name="com.netmera.mobile.NetmeraBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+				<intent-filter>
+					<action android:name="com.google.android.c2dm.intent.RECEIVE" />
+					<action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+					<category android:name="$PACKAGE_NAME" /> 
+				</intent-filter> 
+			</receiver>
+        </config-file>
+        
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+			<uses-permission android:name="android.permission.INTERNET" />
+			<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+			<uses-permission android:name="android.permission.WAKE_LOCK" />
+			<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+			<permission android:name="$PACKAGE_NAME.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+			<uses-permission android:name="$PACKAGE_NAME.permission.C2D_MESSAGE" />
+        </config-file>
+
+        <source-file src="src/android/netmera/netmera-mobile-2.8.3.jar" target-dir="libs" framework="true" />
+        <source-file src="src/android/NetmeraPlugin.java" target-dir="src/org/apache/cordova/core" />
+
+        <source-file src="src/android/netmeraplugin.xml" target-dir="res/values" />
+        <config-file target="res/values/netmeraplugin.xml" parent="/*">
+            <string name="netmera_api_key">$NM_API_KEY</string>
+            <string name="netmera_google_project_id">$GOOGLE_PROJECT_ID</string>
+        </config-file>
+     </platform>
+	 
+	 <!-- Other platforms will be here soon -->
+</plugin>
