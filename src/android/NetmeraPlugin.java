@@ -70,37 +70,29 @@ public class NetmeraPlugin extends CordovaPlugin {
 	}
 
 	private void setTags(final List<String> tags, final boolean overrideTags, final CallbackContext callbackContext) {
-		cordova.getThreadPool().execute(new Runnable() {
-			public void run() {
-				NetmeraDeviceDetail deviceDetail = new NetmeraDeviceDetail(app.getApplicationContext(), googleProjectId, pushActivityClass);
-				deviceDetail.setTags(tags);
-				deviceDetail.setOverrideTags(overrideTags);
-				try {
-					NetmeraPushService.register(deviceDetail);
-					callbackContext.success();
-				} catch (NetmeraException e) {
-					callbackContext.error(e.getMessage());
-				}
-			}
-		});
+		NetmeraDeviceDetail deviceDetail = new NetmeraDeviceDetail(app.getApplicationContext(), googleProjectId, pushActivityClass);
+		deviceDetail.setTags(tags);
+		deviceDetail.setOverrideTags(overrideTags);
+		try {
+			NetmeraPushService.register(deviceDetail);
+			callbackContext.success();
+		} catch (NetmeraException e) {
+			callbackContext.error(e.getMessage());
+		}
 	}
 
 	private void sendCustomEvent(final String eventName, final JSONObject eventData, final CallbackContext callbackContext) {
-		cordova.getThreadPool().execute(new Runnable() {
-			public void run() {
-				try {
-					if (eventData == null) {
-						NetmeraEvent.sendCustomEvent(eventName);
-						callbackContext.success();
-					} else {
-						NetmeraEvent.sendCustomEventWithData(eventName, eventData);
-						callbackContext.success();
-					}
-				} catch (NetmeraException e) {
-					callbackContext.error(e.getMessage());
-				}
+		try {
+			if (eventData == null) {
+				NetmeraEvent.sendCustomEvent(eventName);
+				callbackContext.success();
+			} else {
+				NetmeraEvent.sendCustomEventWithData(eventName, eventData);
+				callbackContext.success();
 			}
-		});
+		} catch (NetmeraException e) {
+			callbackContext.error(e.getMessage());
+		}
 	}
 
 	private List<String> convertJSONArrayToStringList(JSONArray jsonArray) throws JSONException {
