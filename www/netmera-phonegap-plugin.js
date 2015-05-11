@@ -20,6 +20,7 @@ var netmeraPlugin = {
 	},
 	
 	sendEvent: function (eventName, successCallback, errorCallback) {
+		console.log("sending event: " + eventName);
 		cordova.exec(
 			successCallback,
 			errorCallback,
