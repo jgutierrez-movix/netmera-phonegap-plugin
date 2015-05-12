@@ -1,11 +1,11 @@
 var netmeraPlugin = {
-	initialize: function (apiKey, googleProjectId, successCallback, errorCallback) {
+	initialize: function (apiKey, successCallback, errorCallback) {
 		cordova.exec(
 			successCallback,
 			errorCallback,
 			'NetmeraPlugin',
 			'initialize',
-			[apiKey, googleProjectId]
+			[apiKey]
 		);
 	},
 	
