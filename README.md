@@ -178,6 +178,31 @@ where MainActivity is the activity that opens when the application is opened. Th
 ```xml
 <application android:name="my.package.namespace.App" ... >...</application>
 ```
+------
+### iOS
+
+Copy the following files to your project :
+
+```ios
+
+NetmeraPlugin.h
+NetmeraPlugin.m
+
+```
+
+Add a reference for this plugin to the plugins section in config.xml :
+
+```ref
+
+ <!--NetmeraPlugin  -->
+    <feature name="NetmeraPlugin">
+        <param name="ios-package" value="NetmeraPlugin"/>
+    </feature>
+    
+```
+Manuel installation for iOS :
+	[Netmera API](http://www.netmera.com/docs/#document-1)
+    
 
 
 Compatibility
