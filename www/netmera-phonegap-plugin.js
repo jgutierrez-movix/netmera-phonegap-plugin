@@ -39,12 +39,12 @@ var netmeraPlugin = {
 		);
 	},
 	
-	getTags: function (successCallback, errorCallback) {
+	getAllAplicationTags: function (successCallback, errorCallback) {
 		cordova.exec(
 			successCalback,
 			errorCallback,
 			'NetmeraPlugin',
-			'getTags',
+			'getAllAplicationTags',
 			[]
 			);
 	},
