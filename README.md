@@ -103,6 +103,16 @@ netmeraPlugin.setCustomFields(customFields, function() {
 	alert(e);
 });
 
+/**
+* Override custom fields of the user
+*/
+var customFields = { 'color':'blue' , 'number': 13, 'word': 'netmera' };
+netmeraPlugin.overrideCustomFields(customFields, function() {
+	alert("User's Custom Fields overrided successfull");
+}, function (e) {
+	// Handle error
+	alert(e);
+});
 
 /**
  * Removing specific tags from the user
@@ -147,6 +157,30 @@ netmeraPlugin.sendEventWithData('AddToCartEvent', customData, function () {
 	// Handle error
 	alert(e);
 });
+
+/**
+*    Installation Id
+*/
+netmeraPlugin.getInstallationId(function (instId) {
+	// Getting installation id
+	console.log(instId);
+	
+}, function(e) {
+	// Handle error
+	alert(e);
+});
+
+/**
+*  Getting all avaible tags
+*/
+netmeraPlugin.getTags(function(getTags) {
+	console.log(getTags);
+	
+}, function(e) {
+	// Handle error
+	alert(e);
+});
+
 
 ```
 
