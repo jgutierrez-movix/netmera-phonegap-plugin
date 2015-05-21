@@ -130,7 +130,7 @@ var netmeraPlugin = {
 		);
 	},
 	
-	getInstallationId: function ()  {
+	getInstallationId: function (successCallback, errorCallback)  {
 		cordova.exec(
 			successCallback,
 			errorCallback,

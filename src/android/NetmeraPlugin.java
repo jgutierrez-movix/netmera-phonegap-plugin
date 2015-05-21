@@ -37,6 +37,9 @@ public class NetmeraPlugin extends CordovaPlugin {
 	public static final String ACTION_UNREGISTER = "unregister";
 	public static final String ACTION_REMOVE_TAGS = "removeTags";
 	public static final String ACTION_GET_DEVICE_DETAIL = "getDeviceDetail";
+	public static final String ACTION_GET_APPLICATION_TAGS = "getAllAplicationTags";
+	public static final String ACTION_OVERRIDE_CUSTOM_FIELDS = "overrideCustomFields";
+	public static final String ACTION_GET_INSTALLATION_ID = "getInstallationId";
 
 	private static Application app;
 	private static Class<? extends Activity> pushActivityClass;
@@ -63,7 +66,7 @@ public class NetmeraPlugin extends CordovaPlugin {
 
 	@Override
 	public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
-		if (action.equals(ACTION_INITIALIZE) {
+		if (action.equals(ACTION_INITIALIZE)) {
 			// In Android, Application class handles initialization.
 			// ACTION_INITIALIZE is added for iOS
 			callbackContext.success();
@@ -116,6 +119,19 @@ public class NetmeraPlugin extends CordovaPlugin {
 			this.getDeviceDetail(callbackContext);
 			return true;
 		}
+		
+		if(action.equals(ACTION_GET_APPLICATION_TAGS)) {
+			this.getAllAplicationTags(callbackContext);
+			return true;
+		}
+		if(action.equals(ACTION_OVERRIDE_CUSTOM_FIELDS)) {
+			this.overrideCustomFields(args.getJSONObject(0), callbackContext);
+			return true;
+		}
+		if(action.equals(ACTION_GET_INSTALLATION_ID)) {
+			this.getInstallationId(callbackContext);
+			return true;
+		}
 
 		return false;
 	}
@@ -146,6 +162,7 @@ public class NetmeraPlugin extends CordovaPlugin {
 			}
 		});
 	}
+	
 
 	private void setTags(final List<String> tags, final boolean overrideTags, final CallbackContext callbackContext) {
 		NetmeraDeviceDetail deviceDetail = new NetmeraDeviceDetail(app.getApplicationContext(), googleProjectId, pushActivityClass);
@@ -171,10 +188,41 @@ public class NetmeraPlugin extends CordovaPlugin {
 	}
 
 	private void setCustomFields(JSONObject customFieldsObj, final CallbackContext callbackContext) throws JSONException {
+		final Map<String, Object> oldCustomFields = new HashMap<String,Object>();
+		NetmeraPushService.getDeviceDetailInBackground(app.getApplicationContext(), new NetmeraCallback<NetmeraDeviceDetail>() {
+			@Override
+			public void onSuccess(NetmeraDeviceDetail deviceDetail) {		
+				oldCustomFields.putAll(deviceDetail.getCustomFields());
+			}
+
+			@Override
+			public void onFail(NetmeraException e) {
+				callbackContext.error(e.getMessage());
+			}
+		});
+
 		NetmeraDeviceDetail deviceDetail = new NetmeraDeviceDetail(app.getApplicationContext(), googleProjectId, pushActivityClass);
 		try {
 			Map<String, Object> customFields = new HashMap<String, Object>();
+			customFields.putAll(oldCustomFields);
+			Iterator<String> keys = customFieldsObj.keys();
+			while (keys.hasNext()) {
+				String key = keys.next();
+				customFields.put(key, customFieldsObj.get(key));
+			}
 
+			deviceDetail.setCustomFields(customFields);
+			NetmeraPushService.register(deviceDetail);
+			callbackContext.success();
+		} catch (NetmeraException e) {
+			callbackContext.error(e.getMessage());
+		}
+	}
+	
+	private void overrideCustomFields(JSONObject customFieldsObj, final CallbackContext callbackContext) throws JSONException {
+		NetmeraDeviceDetail deviceDetail = new NetmeraDeviceDetail(app.getApplicationContext(), googleProjectId, pushActivityClass);
+		try {
+			Map<String, Object> customFields = new HashMap<String, Object>();
 			Iterator<String> keys = customFieldsObj.keys();
 			while (keys.hasNext()) {
 				String key = keys.next();
@@ -245,5 +293,32 @@ public class NetmeraPlugin extends CordovaPlugin {
 		}
 
 		return json;
+	}
+	
+	private void getAllAplicationTags(final CallbackContext callbackContext) {
+		NetmeraPushService.getTagsInBackground(new NetmeraCallback<List<String>>() {
+            @Override
+            public void onSuccess(List<String> result) {
+				try {
+					JSONObject json = new JSONObject();
+					JSONArray tagsArr = new JSONArray(result);
+					json.put("allApplicationTags", tagsArr);
+					callbackContext.success(json);
+				} catch (JSONException e) {
+					callbackContext.error(e.getMessage());
+				}				
+            }
+
+            @Override
+            public void onFail(NetmeraException exception) {
+				callbackContext.error(exception.getMessage());
+            }
+        });
+		
+	}
+	
+	private void getInstallationId(final CallbackContext callbackContext) {
+		String installationId = Netmera.getInstallationID();
+		callbackContext.success(installationId);
 	}
 }
