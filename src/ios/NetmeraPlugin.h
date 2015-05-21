@@ -1,27 +1,26 @@
 //
-//  NetmeraPlugin.h
-//  NetmeraPhonegap
 //
-//  Created by ufukSerdogan on 18/05/15.
-//
-//
+
 #import "AppDelegate.h"
 #import <Cordova/CDV.h>
 
 @interface NetmeraPlugin : CDVPlugin
 
 
-- (void)initNetmera: (CDVInvokedUrlCommand *)command;
+- (void)initialize: (CDVInvokedUrlCommand *)command;
 - (void)getInstallationId: (CDVInvokedUrlCommand *)command;
-- (void)addTags: (CDVInvokedUrlCommand *)command;
-- (void)overrideTags: (CDVInvokedUrlCommand *)command;
+- (void)setTags: (CDVInvokedUrlCommand *)command;
 - (void)removeTags: (CDVInvokedUrlCommand *)command;
-- (void)unregisterAllTags: (CDVInvokedUrlCommand *)command;
-- (void)getAvailableTags: (CDVInvokedUrlCommand *)command;
-- (void)addCustomFields: (CDVInvokedUrlCommand *)command;
+- (void)unregister: (CDVInvokedUrlCommand *)command;
+- (void)getTags: (CDVInvokedUrlCommand *)command;
+- (void)setCustomFields: (CDVInvokedUrlCommand *)command;
 - (void)overrideCustomFields: (CDVInvokedUrlCommand *)command;
 - (void)getDeviceDetail: (CDVInvokedUrlCommand *)command;
-- (void)sendEventWithKey: (CDVInvokedUrlCommand *)command;
+- (void)sendEvent: (CDVInvokedUrlCommand *)command;
+- (void)sendEventWithData: (CDVInvokedUrlCommand *)command;
+- (void)registerPush:(CDVInvokedUrlCommand *)command;
+- (void)updateLocation: (CDVInvokedUrlCommand *)command;
+
 - (NSDictionary *)getDeviceDetailDictionary:(NMDeviceDetail*)deviceDetail;
 
 @end
