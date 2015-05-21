@@ -83,7 +83,7 @@ netmeraPlugin.overrideTags(["Music"], function() {
 /**
 *  Get all avaible tags
 */
-netmeraPlugin.getTags(function(getTags) {
+netmeraPlugin.getAllAplicationTags(function(getTags) {
 	console.log(getTags);
 	
 }, function(e) {
