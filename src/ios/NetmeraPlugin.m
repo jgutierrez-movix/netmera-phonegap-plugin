@@ -142,7 +142,7 @@
     return NMdeviceDetailDic;
 }
 
-- (void)getTags:(CDVInvokedUrlCommand *)command  // returns an array
+- (void)getAllAplicationTags:(CDVInvokedUrlCommand *)command  // returns an array
 {
     
     [NMPushManager getDeviceTagsWithCompletionHandler:^( NSArray *tags, NSError *error){
