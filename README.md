@@ -80,6 +80,28 @@ netmeraPlugin.overrideTags(["Music"], function() {
 });
 
 
+/**
+*  Get all avaible tags
+*/
+netmeraPlugin.getTags(function(getTags) {
+	console.log(getTags);
+	
+}, function(e) {
+	// Handle error
+	alert(e);
+});
+
+
+/**
+ * Removing specific tags from the user
+ */
+netmeraPlugin.removeTags(["Music"], function() {
+	alert("Remove Tags successfull");
+}, function (e) {
+	// Handle error
+	alert(e);
+});
+
 
 /**
  * Update location of the user.
@@ -109,16 +131,6 @@ netmeraPlugin.setCustomFields(customFields, function() {
 var customFields = { 'color':'blue' , 'number': 13, 'word': 'netmera' };
 netmeraPlugin.overrideCustomFields(customFields, function() {
 	alert("User's Custom Fields overrided successfull");
-}, function (e) {
-	// Handle error
-	alert(e);
-});
-
-/**
- * Removing specific tags from the user
- */
-netmeraPlugin.removeTags(["Music"], function() {
-	alert("Remove Tags successfull");
 }, function (e) {
 	// Handle error
 	alert(e);
@@ -164,17 +176,6 @@ netmeraPlugin.sendEventWithData('AddToCartEvent', customData, function () {
 netmeraPlugin.getInstallationId(function (instId) {
 	// Getting installation id
 	console.log(instId);
-	
-}, function(e) {
-	// Handle error
-	alert(e);
-});
-
-/**
-*  Getting all avaible tags
-*/
-netmeraPlugin.getTags(function(getTags) {
-	console.log(getTags);
 	
 }, function(e) {
 	// Handle error
