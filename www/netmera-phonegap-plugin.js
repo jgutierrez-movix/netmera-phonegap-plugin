@@ -1,4 +1,14 @@
 var netmeraPlugin = {
+	initialize: function (apiKey, successCallback, errorCallback) {
+		cordova.exec(
+			successCallback,
+			errorCallback,
+			'NetmeraPlugin',
+			'initialize',
+			[apiKey]
+		);
+	},
+	
 	register: function (successCallback, errorCallback) {
 		cordova.exec(
 			successCallback,
@@ -27,6 +37,16 @@ var netmeraPlugin = {
 			'setTags',
 			[tags, true]
 		);
+	},
+	
+	getTags: function (successCallback, errorCallback) {
+		cordova.exec(
+			successCalback,
+			errorCallback,
+			'NetmeraPlugin',
+			'getTags',
+			[]
+			);
 	},
 	
 	sendEvent: function (eventName, successCallback, errorCallback) {
@@ -70,6 +90,16 @@ var netmeraPlugin = {
 		);
 	},
 	
+	overrideCustomFields: function (customFields, successCallback, errorCallback) {
+		cordova.exec(
+			successCallback,
+			errorCallback,
+			'NetmeraPlugin',
+			'overrideCustomFields',
+			[customFields]
+		);	
+	},
+	
 	unregister: function (successCallback, errorCallback) {
 		cordova.exec(
 			successCallback,
@@ -98,6 +128,16 @@ var netmeraPlugin = {
 			'getDeviceDetail',
 			[]
 		);
-	}
+	},
+	
+	getInstallationId: function ()  {
+		cordova.exec(
+			successCallback,
+			errorCallback,
+			'NetmeraPlugin',
+			'getInstallationId',
+			[]
+		);
+	},
 };
 module.exports = netmeraPlugin;

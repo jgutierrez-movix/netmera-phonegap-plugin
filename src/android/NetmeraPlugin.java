@@ -28,6 +28,7 @@ import com.netmera.mobile.NetmeraPushService;
 
 public class NetmeraPlugin extends CordovaPlugin {
 	public static final String TAG = "NetmeraPlugin";
+	public static final String ACTION_INITIALIZE = "initialize";
 	public static final String ACTION_REGISTER = "register";
 	public static final String ACTION_SET_TAGS = "setTags";
 	public static final String ACTION_UPDATE_LOCATION = "updateUserLocation";
@@ -62,6 +63,13 @@ public class NetmeraPlugin extends CordovaPlugin {
 
 	@Override
 	public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
+		if (action.equals(ACTION_INITIALIZE) {
+			// In Android, Application class handles initialization.
+			// ACTION_INITIALIZE is added for iOS
+			callbackContext.success();
+			return true;
+		}
+		
 		if (action.equals(ACTION_REGISTER)) {
 			this.register(callbackContext);
 			return true;

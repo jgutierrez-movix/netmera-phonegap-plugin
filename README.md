@@ -80,6 +80,28 @@ netmeraPlugin.overrideTags(["Music"], function() {
 });
 
 
+/**
+*  Get all avaible tags
+*/
+netmeraPlugin.getTags(function(getTags) {
+	console.log(getTags);
+	
+}, function(e) {
+	// Handle error
+	alert(e);
+});
+
+
+/**
+ * Removing specific tags from the user
+ */
+netmeraPlugin.removeTags(["Music"], function() {
+	alert("Remove Tags successfull");
+}, function (e) {
+	// Handle error
+	alert(e);
+});
+
 
 /**
  * Update location of the user.
@@ -103,12 +125,12 @@ netmeraPlugin.setCustomFields(customFields, function() {
 	alert(e);
 });
 
-
 /**
- * Removing specific tags from the user
- */
-netmeraPlugin.removeTags(["Music"], function() {
-	alert("Remove Tags successfull");
+* Override custom fields of the user
+*/
+var customFields = { 'color':'blue' , 'number': 13, 'word': 'netmera' };
+netmeraPlugin.overrideCustomFields(customFields, function() {
+	alert("User's Custom Fields overrided successfull");
 }, function (e) {
 	// Handle error
 	alert(e);
@@ -148,6 +170,19 @@ netmeraPlugin.sendEventWithData('AddToCartEvent', customData, function () {
 	alert(e);
 });
 
+/**
+*    Installation Id
+*/
+netmeraPlugin.getInstallationId(function (instId) {
+	// Getting installation id
+	console.log(instId);
+	
+}, function(e) {
+	// Handle error
+	alert(e);
+});
+
+
 ```
 
 Quirks
@@ -178,6 +213,31 @@ where MainActivity is the activity that opens when the application is opened. Th
 ```xml
 <application android:name="my.package.namespace.App" ... >...</application>
 ```
+------
+### iOS
+
+Copy the following files to your project :
+
+```ios
+
+NetmeraPlugin.h
+NetmeraPlugin.m
+
+```
+
+Add a reference for this plugin to the plugins section in config.xml :
+
+```ref
+
+ <!--NetmeraPlugin  -->
+    <feature name="NetmeraPlugin">
+        <param name="ios-package" value="NetmeraPlugin"/>
+    </feature>
+    
+```
+Manuel installation for iOS :
+	[Netmera API](http://www.netmera.com/docs/#document-1)
+    
 
 
 Compatibility
