@@ -83,7 +83,7 @@ netmeraPlugin.overrideTags(["Music"], function() {
 /**
 *  Get all avaible tags
 */
-netmeraPlugin.getTags(function(getTags) {
+netmeraPlugin.getAllAplicationTags(function(getTags) {
 	console.log(getTags);
 	
 }, function(e) {
@@ -115,7 +115,7 @@ netmeraPlugin.updateLocation(41.212413, 29.8719310, function() {
 
 
 /**
- * Set custom fields of the user
+ * This method does not override the previous custom fields. It adds new custom fields to the previous ones.
  */
 var customFields = { 'age': 21, 'gender': 'male', 'city': 'Istanbul' };
 netmeraPlugin.setCustomFields(customFields, function() {
@@ -126,7 +126,7 @@ netmeraPlugin.setCustomFields(customFields, function() {
 });
 
 /**
-* Override custom fields of the user
+* Override custom fields of the user. This method overrides the previous custom fields
 */
 var customFields = { 'color':'blue' , 'number': 13, 'word': 'netmera' };
 netmeraPlugin.overrideCustomFields(customFields, function() {
