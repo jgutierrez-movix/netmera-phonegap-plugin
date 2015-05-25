@@ -6,10 +6,14 @@ Phonegap 3.0.0 plugin for Netmera.com push and event services
 Using [Netmera.com's](http://www.netmera.com) REST API for push requires the installation id, which isn't available in JS
 Registering to push notifications and receiving them requires native code. In applications where Javascript is preferred instead of native Android or iOS, using push notifications is not possible.
 
-This plugin makes it possible to use native Netmera SDK's from Javascript in your phonegap application.
+This plugin makes it possible to use native Netmera SDK's from Javascript in your phonegap application. It is a plugin which could be used to send pushes to both Android and IOS. Please scroll down for guide of IOS applications
 
 Installation
 ------------
+
+
+
+### Android
 
 Pick one of these two commands:
 
@@ -20,11 +24,65 @@ cordova plugin add https://github.com/Netmera/netmera-phonegap-plugin --variable
 
 ```
 
+Quirks
+------
+
+Netmera needs to be initialized once in the `onCreate` method of your application class using the `NetmeraPlugin.initNetmera(Application app, Class<? extends Activity> pushActivityClass)` method.
+
+If you don’t have an application class (which is most likely the case for a Cordova app), you can create one using this template:
+
+```java
+package my.package.namespace;
+
+import android.app.Application;
+import org.apache.cordova.core.NetmeraPlugin;
+
+public class App extends Application {
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        NetmeraPlugin.initNetmera(this, MainActivity.class);
+    }
+}
+```
+where MainActivity is the activity that opens when the application is opened. Then, you will need to add your application name to `AndroidManifest.xml`:
+
+```xml
+<application android:name="my.package.namespace.App" ... >...</application>
+```
+------
+### iOS
+
+Copy the following files to your project :
+
+```ios
+
+NetmeraPlugin.h
+NetmeraPlugin.m
+
+```
+
+Add a reference for this plugin to the plugins section in config.xml :
+
+```ref
+
+ <!--NetmeraPlugin  -->
+    <feature name="NetmeraPlugin">
+        <param name="ios-package" value="NetmeraPlugin"/>
+    </feature>
+    
+```
+Manuel installation for iOS : In order to use this plugin in IOS applications, you need to download and add Netmera IOS SDK to your project from http://www.netmera.com/downloads . You can find related information by using the link below
+	[Netmera API](http://www.netmera.com/docs/#document-1)
+    
+
+
+
 Initial Setup
 -------------
 
 
-Usage
+Usage in Javascript (The methods are both for Android and IOS applications)
 -----
 ```javascript
 
@@ -185,59 +243,6 @@ netmeraPlugin.getInstallationId(function (instId) {
 
 ```
 
-Quirks
-------
-
-### Android
-
-Netmera needs to be initialized once in the `onCreate` method of your application class using the `NetmeraPlugin.initNetmera(Application app, Class<? extends Activity> pushActivityClass)` method.
-
-If you don’t have an application class (which is most likely the case for a Cordova app), you can create one using this template:
-
-```java
-package my.package.namespace;
-
-import android.app.Application;
-import org.apache.cordova.core.NetmeraPlugin;
-
-public class App extends Application {
-    @Override
-    public void onCreate() {
-        super.onCreate();
-        NetmeraPlugin.initNetmera(this, MainActivity.class);
-    }
-}
-```
-where MainActivity is the activity that opens when the application is opened. Then, you will need to add your application name to `AndroidManifest.xml`:
-
-```xml
-<application android:name="my.package.namespace.App" ... >...</application>
-```
-------
-### iOS
-
-Copy the following files to your project :
-
-```ios
-
-NetmeraPlugin.h
-NetmeraPlugin.m
-
-```
-
-Add a reference for this plugin to the plugins section in config.xml :
-
-```ref
-
- <!--NetmeraPlugin  -->
-    <feature name="NetmeraPlugin">
-        <param name="ios-package" value="NetmeraPlugin"/>
-    </feature>
-    
-```
-Manuel installation for iOS :
-	[Netmera API](http://www.netmera.com/docs/#document-1)
-    
 
 
 Compatibility
