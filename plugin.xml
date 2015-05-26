@@ -48,6 +48,17 @@
             <string name="netmera_google_project_id">$GOOGLE_PROJECT_ID</string>
         </config-file>
      </platform>
-	 
-	 <!-- Other platforms will be here soon -->
+    <!-- ios -->
+    <platform name="ios">
+        
+        <config-file target="config.xml" parent="/*">
+            <feature name="NetmeraPlugin">
+                <param name="ios-package" value="NetmeraPlugin"/>
+            </feature>
+        </config-file>
+        
+        <source-file src="src/ios/NetmeraPlugin.m" />
+        <header-file src="src/ios/NetmeraPlugin.h" />
+        
+    </platform>
 </plugin>
