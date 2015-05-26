@@ -192,24 +192,29 @@ public class NetmeraPlugin extends CordovaPlugin {
 		}
 	}
 
-	private void setCustomFields(JSONObject customFieldsObj, final CallbackContext callbackContext) throws JSONException {
+	private void setCustomFields(final JSONObject customFieldsObj, final CallbackContext callbackContext) throws JSONException {
 		final Map<String, Object> oldCustomFields = new HashMap<String,Object>();
 		NetmeraPushService.getDeviceDetailInBackground(app.getApplicationContext(), new NetmeraCallback<NetmeraDeviceDetail>() {
 			@Override
 			public void onSuccess(NetmeraDeviceDetail deviceDetail) {		
 				oldCustomFields.putAll(deviceDetail.getCustomFields());
-				NetmeraDeviceDetail deviceDetail = new NetmeraDeviceDetail(app.getApplicationContext(), googleProjectId, pushActivityClass);
+				NetmeraDeviceDetail deviceDetailNew = new NetmeraDeviceDetail(app.getApplicationContext(), googleProjectId, pushActivityClass);
 				try {
 					  Map<String, Object> customFields = new HashMap<String, Object>();
 					  customFields.putAll(oldCustomFields);
 					  Iterator<String> keys = customFieldsObj.keys();
 					  while (keys.hasNext()) {
 					    String key = keys.next();
-					    customFields.put(key, customFieldsObj.get(key));
+					    try {
+							customFields.put(key, customFieldsObj.get(key));
+						} catch (JSONException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
 					  }
 
-					  deviceDetail.setCustomFields(customFields);
-					  NetmeraPushService.register(deviceDetail);
+					  deviceDetailNew.setCustomFields(customFields);
+					  NetmeraPushService.register(deviceDetailNew);
 					  callbackContext.success();
 				  } catch (NetmeraException e) {
 					  callbackContext.error(e.getMessage());
