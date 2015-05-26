@@ -240,6 +240,18 @@ netmeraPlugin.getInstallationId(function (instId) {
 	alert(e);
 });
 
+/**
+*   Device Token
+*/
+netmeraPlugin.getDeviceTokenId (function (deviceToken) {
+// Getting deviceToken id
+console.log(deviceToken);
+
+}, function(e) {
+    // Handle error
+    alert(e);
+});
+
 
 ```
 
