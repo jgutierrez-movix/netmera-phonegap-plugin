@@ -21,7 +21,7 @@
 {
     NSString *NMapiKey = [command.arguments objectAtIndex:0];
     [Netmera setApiKey: NMapiKey];
-
+    
     CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK ];
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
@@ -29,11 +29,11 @@
 - (void)getInstallationId:(CDVInvokedUrlCommand *)command             //returns a strings value
 {
     [self.commandDelegate runInBackground:^{
-    NSString *NMid = [Netmera getInstallationId];
-
-    CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:NMid];
-    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
-}];
+        NSString *NMid = [Netmera getInstallationId];
+        
+        CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:NMid];
+        [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+    }];
 }
 
 - (void)setTags: (CDVInvokedUrlCommand *)command
@@ -53,7 +53,6 @@
     }
     
     [NMPushManager registerWithDeviceDetail:deviceDetail completionHandler:^(BOOL deviceDidRegister, NSError *error){
-        
         CDVPluginResult *pluginResult =nil;
         if (!error)
         {
@@ -74,7 +73,6 @@
     [deviceDetail addTags:NMtags];                                        //deviceDetail addTags - must take array value
     
     [NMPushManager unregisterWithDeviceDetail:deviceDetail completionHandler:^(BOOL deviceDidUnregister, NSError *error){
-        
         CDVPluginResult *pluginResult =nil;
         if (!error)
         {
@@ -85,7 +83,6 @@
             pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:error.localizedDescription];
         }
         [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
-
     }];
 }
 
@@ -93,38 +90,32 @@
 {
     [NMPushManager unregisterWithCompletionHandler:^(BOOL deviceDidUnregister, NSError *error){
         CDVPluginResult *pluginResult =nil;
-
         if (!error)
         {
             pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
         }
         else
         {
-           pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:error.localizedDescription];
+            pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:error.localizedDescription];
         }
         [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
-
     }];
 }
 
 - (void)getDeviceDetail: (CDVInvokedUrlCommand *)command  //returns dictionary
 {
-    
     [NMDeviceDetail getDeviceDetailWithCompletionHandler:^(NMDeviceDetail *deviceDetail, NSError *error) {
-        
         CDVPluginResult *pluginResult =nil;
         NSDictionary *NMdeviceDetailDic = [self getDeviceDetailDictionary:deviceDetail];
-        
         if (!error)
         {
-           pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:NMdeviceDetailDic];
+            pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:NMdeviceDetailDic];
         }
         else
         {
             pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:error.localizedDescription];
         }
         [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
-
     }];
 }
 
@@ -132,7 +123,7 @@
 {
     NSMutableDictionary *NMdeviceDetailDic = [[NSMutableDictionary alloc]init];
     NMGeolocation *NMgeo = deviceDetail.location;
-   
+    
     [NMdeviceDetailDic setValue:[NSString stringWithFormat:@"%f", NMgeo.latitude] forKey:@"Latitude"];
     [NMdeviceDetailDic setValue:[NSString stringWithFormat:@"%f", NMgeo.longitude] forKey:@"Longitude"];
     [NMdeviceDetailDic setValue:[NSString stringWithFormat:@"%f", NMgeo.timezone] forKey:@"Timezone"];
@@ -146,7 +137,6 @@
 {
     
     [NMPushManager getDeviceTagsWithCompletionHandler:^( NSArray *tags, NSError *error){
-       
         CDVPluginResult *pluginResult =nil;
         if (!error)
         {
@@ -157,14 +147,13 @@
             pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:error.localizedDescription];
         }
         [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
-
     }];
 }
 
 - (void)setCustomFields: (CDVInvokedUrlCommand *)command
 {
     __block CDVPluginResult *pluginResult =nil;
-
+    
     [NMDeviceDetail getDeviceDetailWithCompletionHandler:^(NMDeviceDetail *deviceDetail, NSError *error) {
         if (!error)
         {
@@ -186,7 +175,6 @@
         {
             pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:error.localizedDescription];
         }
-        
         [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
     }];
 }
@@ -194,24 +182,21 @@
 - (void)overrideCustomFields:(CDVInvokedUrlCommand *)command
 {
     NMDeviceDetail *deviceDetail = [[NMDeviceDetail alloc] init];
-    deviceDetail.customDictionary = [[NSMutableDictionary alloc] init];
-
+    deviceDetail.customDictionary = [[NSMutableDictionary alloc] init];    
     NSDictionary *NMdic = [command.arguments objectAtIndex:0];
     deviceDetail.customDictionary = [NMdic mutableCopy];
-  
+    
     [NMPushManager registerWithDeviceDetail:deviceDetail completionHandler:^(BOOL deviceDidRegister, NSError *error) {
-      
         CDVPluginResult *pluginResult =nil;
         if (!error)
         {
-             pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
+            pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
         }
         else
         {
             pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:error.localizedDescription];
         }
         [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
-
     }];
 }
 
@@ -235,6 +220,15 @@
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
 
+- (void)getDeviceTokenId:(CDVInvokedUrlCommand *)command
+{
+    NMDeviceDetail *deviceDetail = [[NMDeviceDetail alloc] init];
+    NSString *deviceToken = deviceDetail.deviceToken;
+    
+    CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:deviceToken];
+    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+}
+
 - (void)registerPush:(CDVInvokedUrlCommand *)command
 {
     CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK ];
@@ -246,5 +240,6 @@
     CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK ];
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
+
 
 @end

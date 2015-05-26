@@ -20,7 +20,11 @@
 - (void)sendEventWithData: (CDVInvokedUrlCommand *)command;
 - (void)registerPush:(CDVInvokedUrlCommand *)command;
 - (void)updateLocation: (CDVInvokedUrlCommand *)command;
+- (void)getDeviceTokenId: (CDVInvokedUrlCommand *)command;
 
 - (NSDictionary *)getDeviceDetailDictionary:(NMDeviceDetail*)deviceDetail;
+
+@property (nonatomic, strong) AppDelegate *NMappDelegate;
+
 
 @end
