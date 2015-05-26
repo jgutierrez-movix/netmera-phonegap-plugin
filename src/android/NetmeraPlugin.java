@@ -40,6 +40,7 @@ public class NetmeraPlugin extends CordovaPlugin {
 	public static final String ACTION_GET_APPLICATION_TAGS = "getAllAplicationTags";
 	public static final String ACTION_OVERRIDE_CUSTOM_FIELDS = "overrideCustomFields";
 	public static final String ACTION_GET_INSTALLATION_ID = "getInstallationId";
+	private static final String ACTION_GET_DEVICE_TOKEN_ID = "getDeviceTokenId";
 
 	private static Application app;
 	private static Class<? extends Activity> pushActivityClass;
@@ -132,6 +133,10 @@ public class NetmeraPlugin extends CordovaPlugin {
 			this.getInstallationId(callbackContext);
 			return true;
 		}
+		if(action.equals(ACTION_GET_DEVICE_TOKEN_ID)) {
+		  this.getDeviceTokenId(callbackContext);
+		  return true;
+		}
 
 		return false;
 	}
@@ -193,6 +198,22 @@ public class NetmeraPlugin extends CordovaPlugin {
 			@Override
 			public void onSuccess(NetmeraDeviceDetail deviceDetail) {		
 				oldCustomFields.putAll(deviceDetail.getCustomFields());
+				NetmeraDeviceDetail deviceDetail = new NetmeraDeviceDetail(app.getApplicationContext(), googleProjectId, pushActivityClass);
+				try {
+					  Map<String, Object> customFields = new HashMap<String, Object>();
+					  customFields.putAll(oldCustomFields);
+					  Iterator<String> keys = customFieldsObj.keys();
+					  while (keys.hasNext()) {
+					    String key = keys.next();
+					    customFields.put(key, customFieldsObj.get(key));
+					  }
+
+					  deviceDetail.setCustomFields(customFields);
+					  NetmeraPushService.register(deviceDetail);
+					  callbackContext.success();
+				  } catch (NetmeraException e) {
+					  callbackContext.error(e.getMessage());
+				  }
 			}
 
 			@Override
@@ -201,22 +222,7 @@ public class NetmeraPlugin extends CordovaPlugin {
 			}
 		});
 
-		NetmeraDeviceDetail deviceDetail = new NetmeraDeviceDetail(app.getApplicationContext(), googleProjectId, pushActivityClass);
-		try {
-			Map<String, Object> customFields = new HashMap<String, Object>();
-			customFields.putAll(oldCustomFields);
-			Iterator<String> keys = customFieldsObj.keys();
-			while (keys.hasNext()) {
-				String key = keys.next();
-				customFields.put(key, customFieldsObj.get(key));
-			}
-
-			deviceDetail.setCustomFields(customFields);
-			NetmeraPushService.register(deviceDetail);
-			callbackContext.success();
-		} catch (NetmeraException e) {
-			callbackContext.error(e.getMessage());
-		}
+		
 	}
 	
 	private void overrideCustomFields(JSONObject customFieldsObj, final CallbackContext callbackContext) throws JSONException {
@@ -320,5 +326,15 @@ public class NetmeraPlugin extends CordovaPlugin {
 	private void getInstallationId(final CallbackContext callbackContext) {
 		String installationId = Netmera.getInstallationID();
 		callbackContext.success(installationId);
+	}
+	
+	private void getDeviceTokenId(final CallbackContext callbackContext) {
+	  if(NetmeraPushService.isRegistered(app.getApplicationContext())) {
+	      String registrationId = NetmeraPushService.getRegistrationId(app.getApplicationContext());
+	      callbackContext.success(registrationId);
+	  }else {
+	      callbackContext.error("Device is not registered to Netmera Push Service");
+	  }
+	   
 	}
 }
