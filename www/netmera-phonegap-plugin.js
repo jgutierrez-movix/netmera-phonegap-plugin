@@ -13,7 +13,7 @@ register: function(successCallback, errorCallback) {
                  successCallback,
                  errorCallback,
                  'NetmeraPlugin',
-                 'register', []
+                 'registerPush', []
                  );
 },
     
@@ -68,7 +68,7 @@ updateLocation: function(latitude, longitude, successCallback, errorCallback) {
                  successCallback,
                  errorCallback,
                  'NetmeraPlugin',
-                 'updateUserLocation', [latitude, longitude]
+                 'updateLocation', [latitude, longitude]
                  );
 },
     

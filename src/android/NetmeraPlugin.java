@@ -29,9 +29,9 @@ import com.netmera.mobile.NetmeraPushService;
 public class NetmeraPlugin extends CordovaPlugin {
 	public static final String TAG = "NetmeraPlugin";
 	public static final String ACTION_INITIALIZE = "initialize";
-	public static final String ACTION_REGISTER = "register";
+	public static final String ACTION_REGISTER = "registerPush";
 	public static final String ACTION_SET_TAGS = "setTags";
-	public static final String ACTION_UPDATE_LOCATION = "updateUserLocation";
+	public static final String ACTION_UPDATE_LOCATION = "updateLocation";
 	public static final String ACTION_SET_CUSTOM_FIELDS = "setCustomFields";
 	public static final String ACTION_SEND_EVENT = "sendCustomEvent";
 	public static final String ACTION_UNREGISTER = "unregister";
